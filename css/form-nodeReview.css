@@ -1,6 +1,6 @@
 /*节点评审*/
 .nodeEvaluationC{
-    width: 1080px;
+    width: 800px;
     margin:0 auto;
     font-size: 14px;
 }
@@ -20,7 +20,7 @@
 }
 .nodeEvaluationC table input{
     border: 1px solid #CCCCCC;
-    width: 90%;
+    /*width: 90%;*/
     padding:0 5px;
 }
 .nodeEvaluationC table td{
@@ -31,14 +31,14 @@
     background-color: #0560B4;
     color: #ffffff;
 }
-.nodeEvaluation-esInfo tbody td:nth-child(even){
-    width: 400px;
-}
-.nodeEvaluation-esInfo tbody td:nth-child(odd){
-    width: 140px;
-}
+/*.nodeEvaluation-esInfo tbody td:nth-child(even){*/
+    /*width: 400px;*/
+/*}*/
+/*.nodeEvaluation-esInfo tbody td:nth-child(odd){*/
+    /*width: 140px;*/
+/*}*/
 .nodeEvaluation-Gate1 .splitLine{
-    background-color: #CCCCCC;
+    background-color: #f2f2f2;
     text-align: left;
     padding-left: 20px;
 }
@@ -51,7 +51,7 @@
     margin: 5px 0;
 }
 .nodeEvaluation-Gate1 .description{
-    width: 372px;
+    width: 240px;
     height: 25px;
     margin: 5px 0;
 }
@@ -59,7 +59,7 @@
     border-top: 1px solid #9b9b9b;
 }
 .nodeEvaluation-event table{
-    width: 1070px !important;
+    width: 788px !important;
     margin: 5px auto;
 }
 .nodeEvaluation-event .topBorder{
@@ -78,21 +78,22 @@
 }
 .nodeEvaluationC-buttons{
     width: 90px;
-    height:30px;
+    height:24px;
     margin: 5px 15px;
     text-align: center;
     cursor: pointer;
     color: #ffffff;
     border-radius: 5px;
-    border:1px solid #9b9b9b;
     outline:none;
 }
 .nodeEvaluationC-submit{
     background-color: #0560b4;
+    border: none;
 }
 .nodeEvaluationC-cancel{
     background-color: #ffffff;
-    color: #000000;
+    color: #24b145;
+    border:1px solid #24b145;
 }
 .nodeEvaluation-event tfoot{
     text-align: right;
@@ -103,6 +104,7 @@
 }
 .nodeEvaluationC .historyRec td,.nodeEvaluationC .historyRec th{
     padding: 5px;
+    font-size: 12px;
 }
 .nodeEvaluationC .historyRec thead{
     background-color: #ffffff;
@@ -185,4 +187,19 @@
 .riskTableC-title{
     font-size: 16px;
     height: 40px;
+}
+.nodeEvaluationC-input{
+    height: 24px;
+}
+.nodeEvaluationC-input-title{
+    width: 617px ;
+}
+.nodeEvaluationC-input-man{
+    width: 220px;
+}
+.nodeEvaluationC-input-time{
+    width: 220px;
+}
+.nodeEvaluationC-input-tag{
+    width: 90px;
 }
