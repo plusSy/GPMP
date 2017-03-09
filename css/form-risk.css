@@ -25,17 +25,17 @@
 .riskTableC input[type='text'],.riskTableC select{
     height: 30px;
     margin: 5px 0;
-    width: 93%;
+    width: 83%;
     padding: 0 5px;
 }
 .riskTableC input[type='radio']{
     margin-right: 10px;
 }
 .riskTableC select{
-    width: 256px;
+    width: 235px;
 }
 .riskTableC textarea{
-    width: 90%;
+    width: 93%;
     margin: 5px 0;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
@@ -56,6 +56,7 @@
 }
 .riskTableC .riskWay table{
     margin: 5px 0;
+    width: 99%;
 }
 .riskTableC .riskWay button{
     border:none;
@@ -170,8 +171,11 @@
     height: 30px;
 }
 .riskTableB-tdFlag{
-    width: 136px;
+    width: 120px;
 }
 .riskTableB-tdCon{
-    width: 264px;
+    /*width: 264px;*/
+}
+.riskTablec-tag{
+    width: 120px;
 }

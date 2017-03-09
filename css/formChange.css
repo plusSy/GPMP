@@ -69,6 +69,7 @@
     width: 626px;
     height: 100px;
     resize: none;
+    padding: 10px 0 0 10px;
 }
 .changeReview{
     width: 100%;
@@ -132,13 +133,13 @@
 }
 .itemMessage-table{
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     border: 1px solid #9b9b9b;
 }
 .itemMessage-title {
     height: 30px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .itemMessage-table tr > th,.itemMessage-table tr > td{
     border: 1px solid #9b9b9b;
@@ -169,6 +170,9 @@
     background-color: #ffffff;
     font-size: 14px;
     text-align: left;
+}
+.itemMessage-table-thead3{
+    font-size: 12px !important;
 }
 .table-button {
     text-align: right;
