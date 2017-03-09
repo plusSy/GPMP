@@ -1,6 +1,6 @@
 /*风险表单*/
 .riskTableC{
-    width: 1080px;
+    width: 800px;
     margin:0 auto;
     font-size: 14px;
 }
@@ -12,10 +12,11 @@
 }
 .riskTableC table input{
     border: 1px solid #CCCCCC;
+    border-radius: 5px;
 }
 .riskTableC table td{
     height:30px;
-    padding: 0 5px;
+    padding-left:5px;
 }
 .riskTableC table thead{
     background-color: #0560B4;
@@ -24,15 +25,22 @@
 .riskTableC input[type='text'],.riskTableC select{
     height: 30px;
     margin: 5px 0;
-    width: 90%;
+    width: 93%;
     padding: 0 5px;
 }
+.riskTableC input[type='radio']{
+    margin-right: 10px;
+}
 .riskTableC select{
-    width: 120px;
+    width: 256px;
 }
 .riskTableC textarea{
     width: 90%;
     margin: 5px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+    resize: none;
 }
 .riskTableC label{
     display: inline-block;
@@ -42,8 +50,6 @@
     width: 20px;
     height: 20px;
     text-align: center;
-    background-color: #0560b4;
-    color: #ffffff;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -58,15 +64,17 @@
 }
 .riskTableC .btnBox button{
     width: 100px;
-    height:30px;
+    height: 24px;
     margin: 5px 15px;
-    border:1px solid #CCCCCC;
+    border:1px solid #0560b4;
     text-align: center;
     cursor: pointer;
     float: right;
+    border-radius: 5px;
+    outline: none;
 }
 .riskTableC .btnBox button:hover{
-    background-color: #0560B4;
+    background-color: #2b2e37;
     color: #ffffff;
     -webkit-transition: 0.5s linear;
     -moz-transition: 0.5s linear;
@@ -74,7 +82,14 @@
     -o-transition: 0.5s linear;
     transition: 0.5s linear;
 }
-
+.btnBox-submit{
+    background-color: #0560b4;
+    color: #ffffff;
+}
+.btnBox-cancel{
+    background-color: #ffffff;
+    color: #0560b4;
+}
 
 .statues-choice{
     width: 20px;
@@ -149,6 +164,14 @@
 }
 
 .riskTableC-title{
+    text-align: left;
+    padding-left: 10px;
     font-size: 16px;
-    height: 40px;
+    height: 30px;
+}
+.riskTableB-tdFlag{
+    width: 136px;
+}
+.riskTableB-tdCon{
+    width: 264px;
 }

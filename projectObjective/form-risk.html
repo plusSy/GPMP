@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>风险表单</title>
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/form-risk.css">
 </head>
 <body>
@@ -11,14 +12,12 @@
     <!--进度条-->
     <div class="schedule">
         <ul class="wizard-steps">
-            <li data-target="#step1" class="active"> <span class="step">100%</span> <span class="title">变更请求</span> </li>
-            <li data-target="#step2" class="active"> <span class="step">100%</span> <span class="title">变更评审</span> </li>
-            <li data-target="#step3" class="active"> <span class="step">100%</span> <span class="title">成本核算</span> </li>
-            <li data-target="#step4" class="active"> <span class="step">100%</span> <span class="title">变更批准</span> </li>
-            <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">变更通知</span> </li>
-            <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">变更任务</span> </li>
-            <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">任务实施</span> </li>
-            <li data-target="#step7" class="active"> <span class="step">100%</span> <span class="title">任务实施</span></li>
+            <li data-target="#step1" class="active"> <span class="step">100%</span> <span class="title">风险录入</span> </li>
+            <li data-target="#step2" class="active"> <span class="step">100%</span> <span class="title">风险指派</span> </li>
+            <li data-target="#step3" class="active"> <span class="step">100%</span> <span class="title">措施维护</span> </li>
+            <li data-target="#step4" class="active"> <span class="step">100%</span> <span class="title">措施完成</span> </li>
+            <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">措施验证</span> </li>
+            <li data-target="#step7" class="active"> <span class="step">100%</span> <span class="title">风险关闭</span></li>
         </ul>
     </div>
     <!--<div class="riskTableC-topBar">风险表单</div>-->
@@ -30,14 +29,20 @@
         </thead>
         <tbody>
         <tr>
-            <td >标题：</td>
-            <td colspan="3"><input type="text" style="width: 780px"></td>
+            <td class="riskTableB-tdFlag" >标题：</td>
+            <td colspan="3" class="riskTableB-tdCon">
+                <input type="text" style="width: 654px;">
+            </td>
         </tr>
         <tr>
-            <td style="width: 260px">申请人：</td>
-            <td style="width: 270px"><input type="text"></td>
-            <td style="width: 250px">申请时间：</td>
-            <td style="width: 270px"><input type="text"></td>
+            <td class="riskTableB-tdFlag">申请人：</td>
+            <td class="riskTableB-tdCon">
+                <input type="text">
+            </td>
+            <td class="riskTableB-tdFlag">申请时间：</td>
+            <td class="riskTableB-tdCon">
+                <input type="text">
+            </td>
         </tr>
         </tbody>
     </table>
@@ -49,42 +54,58 @@
         </thead>
         <tbody>
         <tr>
-            <td>项目名称：</td>
-            <td colspan="3">是大法官水电费广东省分公司的风格是大法官</td>
+            <td class="riskTableB-tdFlag">项目名称：</td>
+            <td colspan="3" class="riskTableB-tdCon">
+                <input type="text"  style="width: 654px;">
+            </td>
         </tr>
         <tr>
-            <td>项目阶段：</td>
-            <td><select name="">
-                <option value="0" selected>请选择</option>
-            </select></td>
-            <td>是否影响量产</td>
-            <td><label><input type="radio" name="volume">是</label>
+            <td class="riskTableB-tdFlag">项目阶段：</td>
+            <td class="riskTableB-tdCon">
+                <select name="">
+                    <option value="0" selected>请选择</option>
+                </select>
+            </td>
+            <td class="riskTableB-tdFlag">是否影响量产：</td>
+            <td class="riskTableB-tdCon">
+                <label><input type="radio" name="volume">是</label>
                 <label><input type="radio" name="volume">否</label>
             </td>
         </tr>
         <tr>
-            <td>风险维度：</td>
-            <td><select name=""></select></td>
-            <td>风险是否可控制</td>
-            <td><label><input type="radio" name="contro">是</label>
+            <td class="riskTableB-tdFlag">风险维度：</td>
+            <td class="riskTableB-tdCon">
+                <select name="">
+                    <option value="0" selected>请选择</option>
+                </select>
+            </td>
+            <td class="riskTableB-tdFlag">风险是否可控制：</td>
+            <td class="riskTableB-tdCon">
+                <label><input type="radio" name="contro">是</label>
                 <label><input type="radio" name="contro">否</label>
             </td>
         </tr>
         <tr>
-            <td>风险趋势：</td>
-            <td><select name="">
-                <option value="0" selected>请选择</option>
-            </select></td>
-            <td></td>
-            <td></td>
+            <td class="riskTableB-tdFlag">风险趋势：</td>
+            <td class="riskTableB-tdCon">
+                <select name="">
+                    <option value="0" selected>请选择</option>
+                </select>
+            </td>
+            <td class="riskTableB-tdFlag"></td>
+            <td class="riskTableB-tdCon"></td>
         </tr>
         <tr>
-            <td>风险大类：</td>
-            <td><input type="text"></td>
-            <td>风险小类</td>
-            <td><select name="">
-                <option value="0" selected>请选择</option>
-            </select></td>
+            <td class="riskTableB-tdFlag">风险大类：</td>
+            <td class="riskTableB-tdCon">
+                <input type="text">
+            </td>
+            <td class="riskTableB-tdFlag">风险小类：</td>
+            <td class="riskTableB-tdCon">
+                <select name="">
+                 <option value="0" selected>请选择：</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td style="vertical-align: top">问题描述：</td>
@@ -109,29 +130,39 @@
         <tbody>
         <tr>
             <td>责任部门：</td>
-            <td><select name="">
-                <option value="0">请选择</option>
-            </select></td>
+            <td>
+                <select name="">
+                    <option value="0">请选择</option>
+                </select>
+            </td>
             <td>责任人：</td>
-            <td><select name="">
-                <option value="0">请选择</option>
-            </select></td>
+            <td>
+                <select name="">
+                    <option value="0">请选择</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>责任负责人：</td>
-            <td><select name="">
-                <option value="0">请选择</option>
-            </select></td>
+            <td>
+                <select name="">
+                    <option value="0">请选择</option>
+                </select>
+            </td>
             <td>目标关闭日期：</td>
-            <td><select name="">
-                <option value="0">请选择</option>
-            </select></td>
+            <td>
+                <select name="">
+                    <option value="0">请选择</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td>风险等级：</td>
-            <td><select name="">
-                <option value="0">请选择</option>
-            </select></td>
+            <td>
+                <select name="">
+                    <option value="0">请选择</option>
+                </select>
+            </td>
             <td></td>
             <td></td>
         </tr>
@@ -152,42 +183,74 @@
                         <td>临时措施</td>
                         <td>备注</td>
                         <td>责任部门</td>
-                        <td>责任人</td>
+                        <td style="width:50px;">责任人</td>
                         <td>目标完成日期</td>
                         <td>实际完成日期</td>
-                        <td>状态</td>
-                        <td><input type="checkbox"></td>
-                        <td><div class="addRiskWay" onclick="addRiskWay()">+</div></td>
+                        <td style="width:30px;">状态</td>
+                        <td style="width:30px;"><input type="checkbox"></td>
+                        <td style="width:30px;">
+                            <div class="addRiskWay">
+                                <img src="../img/add-icno.png" alt=""style="width: 20px;height: 20px;">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><select name="">
-                            <option value="0">请选择</option>
-                        </select></td>
-                        <td style="color: #0560b4">张三</td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <select name="" style="width: 120px;">
+                                <option value="0">请选择</option>
+                            </select>
+                        </td>
+                        <td style="color: #0560b4;">张三</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
                         <td>
                             <div class="statues-choice"></div>
                         </td>
-                        <td><input type="checkbox"></td>
-                        <td><button>╳</button></td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button>╳</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><select name="">
-                            <option value="0">请选择</option>
-                        </select></td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <select name="" style="width: 120px;">
+                                <option value="0">请选择</option>
+                            </select>
+                        </td>
                         <td style="color: #0560b4">张三</td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
                         <td>
                             <div class="statues-choice"></div>
                         </td>
-                        <td><input type="checkbox"></td>
-                        <td><button>╳</button></td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button>╳</button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -197,27 +260,74 @@
                         <td>长久措施</td>
                         <td>备注</td>
                         <td>责任部门</td>
-                        <td>责任人</td>
+                        <td style="width:50px;">责任人</td>
                         <td>目标完成日期</td>
                         <td>实际完成日期</td>
-                        <td>状态</td>
-                        <td><input type="checkbox"></td>
-                        <td><div class="addRiskWay">+</div></td>
+                        <td style="width:30px;">状态</td>
+                        <td style="width:30px;"><input type="checkbox"></td>
+                        <td style="width:30px;">
+                            <div class="addRiskWay">
+                                <img src="../img/add-icno.png" alt=""style="width: 20px;height: 20px;">
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><select name="">
-                            <option value="0">请选择</option>
-                        </select></td>
-                        <td style="color: #0560b4">张三</td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <select name="" style="width: 120px;">
+                                <option value="0">请选择</option>
+                            </select>
+                        </td>
+                        <td style="color: #0560b4;">张三</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
                         <td>
                             <div class="statues-choice"></div>
                         </td>
-                        <td><input type="checkbox"></td>
-                        <td><button>╳</button></td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button>╳</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <select name="" style="width: 120px;">
+                                <option value="0">请选择</option>
+                            </select>
+                        </td>
+                        <td style="color: #0560b4">张三</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <div class="statues-choice"></div>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button>╳</button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
@@ -226,8 +336,8 @@
         </tbody>
     </table>
     <div class="btnBox">
-        <button>取消</button>
-        <button>提交</button>
+        <button class="btnBox-cancel">取消</button>
+        <button class="btnBox-submit">提交</button>
     </div>
 </div>
 </body>
