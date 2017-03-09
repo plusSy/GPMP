@@ -1,0 +1,24 @@
+/*节点日期变更记录*/
+.nodeTimeChangeRecord{
+    width: 740px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.nodeTimeChangeRecord-table{
+    border-collapse: collapse;
+}
+.nodeTimeChangeRecord-table tr > th,.nodeTimeChangeRecord-table tr > td{
+    border: 1px solid #9b9b9b;
+    line-height: 20px;
+    padding: 3px 0 3px 10px;
+}
+.nodeTimeChangeRecord-table-thead{
+    padding-left: 10px;
+    background-color: #0560b4;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+}

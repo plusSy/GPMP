@@ -1,0 +1,185 @@
+<!--节点评审表-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点评审表</title>
+    <link rel="stylesheet" href="../css/form-nodeReview.css">
+</head>
+<body>
+<div class="nodeEvaluationC">
+    <!--<div class="nodeEvaluationTopBar">节点评审表</div>-->
+    <div class="progressBar">
+        <ul class="wizard-steps">
+            <li data-target="#step1" class="active"> <span class="step">100%</span> <span class="title">变更请求</span> </li>
+            <li data-target="#step2" class="active"> <span class="step">100%</span> <span class="title">变更评审</span> </li>
+            <li data-target="#step3" class="active"> <span class="step">100%</span> <span class="title">成本核算</span> </li>
+        </ul>
+    </div>
+    <table class="nodeEvaluation-esInfo">
+        <thead>
+        <tr>
+            <th colspan="4" class="nodeEvaluationC-title">基本信息</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>标题：</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>申请人：</td>
+            <td style="color: #0560B4;font-weight: bolder">Ning.xu</td>
+            <td>申请时间：</td>
+            <td>2016/7/9</td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="nodeEvaluation-Gate1">
+        <thead>
+        <tr>
+            <th colspan="9" class="nodeEvaluationC-title">Gate 1节点评审表单</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="width: 150px">要素</td>
+            <td style="width: 100px">负责部门</td>
+            <td style="width: 100px">评价人员</td>
+            <td style="width: 60px">占比%</td>
+            <td style="width: 60px">得分</td>
+            <td style="width: 60px">状态</td>
+            <td style="width: 100px">加权得分</td>
+            <td style="width: 300px">问题描述</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="9" class="splitLine">项目进度管理</td>
+        </tr>
+        <tr>
+            <td>项目启动会议</td>
+            <td>项目管理</td>
+            <td>项目经理</td>
+            <td>29%</td>
+            <td><input type="text" class="gradeRe"></td>
+            <td>G</td>
+            <td>20</td>
+            <td><input type="text" class="description"></td>
+            <td> <img src="../img/gantan-icno.png" alt="" style="width: 20px;height: 20px;"></td>
+        </tr>
+        <tr>
+            <td colspan="9" class="splitLine">项目质量面管理</td>
+        </tr>
+        <tr>
+            <td>项目启动会议</td>
+            <td>项目管理</td>
+            <td>项目经理</td>
+            <td>29%</td>
+            <td><input type="text" class="gradeRe"></td>
+            <td>G</td>
+            <td>20</td>
+            <td><input type="text" class="description"></td>
+            <td> <img src="../img/gantan-icno.png" alt="" style="width: 20px;height: 20px;"></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="footBorder">
+            <td colspan="2">评价得分：</td>
+            <td colspan="2">85.5</td>
+            <td colspan="2">评价等级:</td>
+            <td colspan="2">A</td>
+            <td></td>
+        </tr>
+        </tfoot>
+    </table>
+    <table class="nodeEvaluation-event">
+        <thead>
+        <tr>
+            <th colspan="5" class="nodeEvaluationC-title">未完成事项和需支持事项</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="5">
+                <table>
+                    <tbody>
+                    <tr class="topBorder">
+                        <td style="width: 270px">未完成事项</td>
+                        <td style="width: 100px">风险度</td>
+                        <td style="width: 485px">行动计划</td>
+                        <td style="width: 100px">责任人</td>
+                        <td style="width: 100px">截止日期</td>
+                        <td style="width: 100px">
+                            <img src="../img/add-icno.png" alt="" style="width: 18px;height: 18px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td style="text-align: center">
+                            <img src="../img/close-icno.png" alt="" style="width: 18px;height: 18px;">
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tbody>
+                    <tr class="topBorder">
+                        <td style="width: 270px">需支持的项目</td>
+                        <td style="width: 100px">责任人</td>
+                        <td style="width: 500px">回复</td>
+                        <td style="width: 200px">备注</td>
+                        <td style="width: 100px">
+                            <img src="../img/add-icno.png" alt="" style="width: 18px;height: 18px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td ><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td style="text-align: center">
+                            <img src="../img/close-icno.png" alt="" style="width: 18px;height: 18px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="5">
+                <button class="nodeEvaluationC-buttons nodeEvaluationC-submit">提交</button>
+                <button class="nodeEvaluationC-buttons nodeEvaluationC-cancel">取消</button>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    <div style="padding-left: 10px;margin: 10px 0">历史记录</div>
+    <table class="historyRec">
+        <thead >
+        <tr>
+            <th style="width: 100px;">操作人</th>
+            <th style="width: 100px;">过程</th>
+            <th style="width: 200px;">步骤</th>
+            <th style="width: 150px;">操作</th>
+            <th style="width: 200px;">时间</th>
+            <th style="width: 300px;">审批意见</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td style="color: #0560b4">张三</td>
+            <td>节点评审</td>
+            <td>项目经理发起</td>
+            <td>发起评审</td>
+            <td>2016/10/9 9:08:35</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

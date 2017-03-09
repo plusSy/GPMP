@@ -1,0 +1,109 @@
+<!--任务查询条件-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/queryCondition.css">
+</head>
+<body>
+    <div class="queryCondition">
+        <div class="queryCondition-search">
+            <div class="queryCondition-search-header">
+                查询条件
+            </div>
+        </div>
+        <!--查询-->
+        <div class="queryCondition-list">
+            <table class="queryCondition-table">
+                <tbody>
+                <tr class="queryCondition-tr">
+                    <td class="queryCondition-td queryCondition-padding">
+                        <span class="queryCondition-label">项目编号：</span>
+                        <div class="queryCondition-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryCondition-td queryCondition-padding">
+                        <span class="queryCondition-label">汽车集团：</span>
+                        <div class="queryCondition-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryCondition-td queryCondition-padding">
+                        <span class="queryCondition-label">项目经理：</span>
+                        <div class="queryCondition-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="queryCondition-tr">
+                    <td class="queryCondition-td">
+                        <span class="queryCondition-label">目前阶段：</span>
+                        <div class="queryCondition-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryCondition-td">
+                        <span class="queryCondition-label">任务状态：</span>
+                        <div class="queryCondition-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryCondition-td">
+                        <div class="queryCondition-searchButtons">
+                            <button class="queryCondition-searchInfo">查询</button>
+                            <button class="queryCondition-clearInfo">清空</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--任务-->
+        <div class="conditionTitle">进行中任务列表</div>
+        <div class="conditionList">
+            <table class="conditionList-table">
+                <thead class="conditionList-thead">
+                <tr class="conditionList-tr">
+                    <th class="conditionList-th" style="width: 200px; padding-left: 10px;">任务名称</th>
+                    <th class="conditionList-th" style="width: 100px;">项目编号</th>
+                    <th class="conditionList-th" style="width: 100px;">汽车集团</th>
+                    <th class="conditionList-th" style="width: 480px;">项目名称</th>
+                    <th class="conditionList-th" style="width: 100px;">项目经理</th>
+                    <th class="conditionList-th" style="width: 100px;">截止日期</th>
+                </tr>
+                </thead>
+                <tbody class="conditionList-tbody">
+                <tr class="conditionList-tr">
+                    <td class="conditionList-td" style="padding-left: 10px;">项目启动会议报告</td>
+                    <td class="conditionList-td"><span onclick="turnToIndex('./topNav/projectMain.html')">EP0066588</span></td>
+                    <td class="conditionList-td">福特FORD</td>
+                    <td class="conditionList-td" style="padding-right: 50px;">项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告</td>
+                    <td class="conditionList-td">Xu.Ning</td>
+                    <td class="conditionList-td">2017/1/1</td>
+                </tr>
+                <tr class="conditionList-tr">
+                    <td class="conditionList-td" style="padding-left: 10px;">项目启动会议报告</td>
+                    <td class="conditionList-td"><span onclick="turnToIndex('./topNav/projectMain.html')">EP0066588</span></td>
+                    <td class="conditionList-td">福特FORD</td>
+                    <td class="conditionList-td" style="padding-right: 50px;">项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告项目启动会议报告</td>
+                    <td class="conditionList-td">Xu.Ning</td>
+                    <td class="conditionList-td">2017/1/1</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../framework/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+
+        });
+        function turnToIndex(link){
+            window.parent.turnTo(link);
+//                parent.window.document.getElementById("button").value="调用结束";
+        }
+    </script>
+</body>
+</html>

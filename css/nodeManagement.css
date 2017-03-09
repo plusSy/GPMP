@@ -1,0 +1,194 @@
+/*节点管理*/
+.nodeManagement{
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 14px;
+    border: 1px solid #c5d0dc;
+}
+.nodeManagement-title{
+    width: 1070px;
+    height: 40px;
+    background-color: #0560b4;
+    padding-left: 10px;
+}
+.nodeManagement-title-left{
+    color: #ffffff;
+    float: left;
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 40px;
+}
+.nodeManagement-title-right{
+    float: right;
+    padding-right: 10px;
+}
+.nodeManagement-button{
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+.nodeManagement-button:hover{
+    background-color: #4e5465;
+    color: #ffffff;
+}
+.nodeManagement-change-plan{
+    width: 160px;
+    height: 26px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.nodeManagement-edit{
+    width: 80px;
+    height: 26px;
+    font-size: 14px;
+}
+.nodeManagement-gateFirstHeader{
+    text-align: left;
+}
+.nodeManagement-gateFirstHeader .nodeManagement-beginTime,.nodeManagement-gateFirstHeader .nodeManagement-trueTime{
+    color: #ffffff;
+}
+.nodeManagement-gateSecondHeader{
+    text-align: left;
+}
+.nodeManagement-name{
+    width: 265px;
+    padding-left: 10px;
+}
+.nodeManagement-others{
+    width: 115px;
+}
+.nodeManagement-ul{
+    line-height: 40px;
+    font-weight: bolder;
+}
+.nodeManagement-li{
+    overflow: hidden;
+}
+.nodeManagement-li div{
+    float: left;
+}
+.nodeManagement-gateUl{
+    background-color: #0560b4;
+    overflow: hidden;
+    line-height: 30px;
+}
+.nodeManagement-gateLi{
+    overflow: hidden;
+}
+.nodeManagement-gateLi div{
+    float: left;
+}
+.nodeManagement-gate-review{
+    color: #0560b4;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.nodeManagement-gate-review-color{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nodeManagement-review{
+    width: 100px;
+    height: 24px;
+    font-size: 14px;
+    margin-left: 33px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.nodeManagement-review:hover{
+    background-color: #4e5465;
+    color: #ffffff;
+}
+.nodeManagement-gateSecond-li{
+    height: 30px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #c2c2c2;
+}
+.nodeManagement-gateSecond-li div{
+    float: left;
+}
+.statues-choice{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #24b145;
+}
+.nodeManagement-gatedetails-li{
+    background-color: #ffffff;
+    line-height: 40px;
+    border-top: 1px solid #c5d0dc;
+}
+.nodeManagement-responsible{
+    color: #0560b4;
+}
+
+
+
+
+/*SWITCH*/
+.nodeManagementSwitchBox{
+    width: 100%;
+    height: 40px;
+}
+.nodeManagementLabel{
+    display: inline-block;
+    width:44px;
+    height:20px;
+    background: #fff;
+    border-radius:30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .1s ease-out;
+    box-shadow:1px 1px 3px rgba(100,100,100,0.6);
+    margin-top: 4px;
+    /*border: 1px solid #0560b4;*/
+    /*pointer-events: none;//禁止当前元素所有触发动作*/
+}
+.nodeManagementLabel:after{
+    content:'';
+    position: absolute;
+    left:0;
+    height:20px;
+    top:0;
+    background: #cccccc;
+    width:20px;
+    border-radius:50%;
+    cursor: pointer;
+    transition: left .1s ease-out;
+    /*pointer-events: auto;//其子元素放开限制，*/
+    /*border: 1px solid #0560b4;*/
+}
+
+.nodeManagementSwitch[type=checkbox]{
+    display: none;
+}
+.nodeManagementSwitch[type=checkbox]:checked + .nodeManagementLabel{
+    background: #ff5a5a;
+    transition: background-color .1s ease-in;
+}
+.nodeManagementSwitch[type=checkbox]:first-child:checked + .nodeManagementLabel{
+    background: #f39c12;
+    transition: background-color .1s ease-in;
+}
+.nodeManagementSwitch[type=checkbox]:checked + .nodeManagementLabel:last-child{
+    background: #24b145;
+    transition: background-color .1s ease-in;
+}
+.nodeManagementSwitch[type=checkbox]:checked + .nodeManagementLabel:after{
+    background: #fff;
+    left:24px;
+    transition: left .1s ease-in;
+}

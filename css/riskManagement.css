@@ -1,0 +1,59 @@
+/*风险管理*/
+.riskManagement{
+    width: 1076px;
+    margin: 0 auto;
+    border: 1px solid #ced1d6;
+    font-size: 14px;
+}
+.riskManagement-header{
+    width: 1076px;
+    height: 40px;
+    background-color: #0560b4;
+    overflow: hidden;
+    color: #ffffff;
+}
+.riskManagement-header-left{
+    float: left;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.riskManagement-header-right{
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.riskManagement-title{
+    width: 273px;
+    padding-right: 30px !important;
+}
+.riskManagement-table{
+    width: 1078px;
+    border-collapse: collapse;
+}
+.riskManagement-tr:first-child{
+    font-weight: bolder;
+}
+.riskManagement-th{
+    height: 30px;
+    padding-left: 10px;
+}
+.riskManagement-trTd{
+    line-height: 20px;
+}
+.riskManagement-td{
+    border-top: 1px solid #ced1d6;
+    padding:5px 0 5px 10px;
+}
+.riskManagement-number,.riskManagement-area,.riskManagement-name,.riskManagement-warning,.riskManagement-closeDate{
+    width: 100px;
+}
+.riskManagement-overDate{
+    width: 80px;
+}
+.riskManagement-trTd:nth-child(even){
+    background-color: #f2f2f2;
+}

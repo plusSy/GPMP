@@ -1,0 +1,188 @@
+/*节点评审*/
+.nodeEvaluationC{
+    width: 1080px;
+    margin:0 auto;
+    font-size: 14px;
+}
+.nodeEvaluationC .nodeEvaluationTopBar{
+    width: 100%;
+    color: #ffffff;
+    background-color: #0560B4;
+    height:30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.nodeEvaluationC table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 20px;
+    border: 1px solid #9b9b9b;
+}
+.nodeEvaluationC table input{
+    border: 1px solid #CCCCCC;
+    width: 90%;
+    padding:0 5px;
+}
+.nodeEvaluationC table td{
+    height:30px;
+    padding: 0 5px;
+}
+.nodeEvaluationC table thead{
+    background-color: #0560B4;
+    color: #ffffff;
+}
+.nodeEvaluation-esInfo tbody td:nth-child(even){
+    width: 400px;
+}
+.nodeEvaluation-esInfo tbody td:nth-child(odd){
+    width: 140px;
+}
+.nodeEvaluation-Gate1 .splitLine{
+    background-color: #CCCCCC;
+    text-align: left;
+    padding-left: 20px;
+}
+.nodeEvaluation-Gate1 td{
+    text-align: center;
+}
+.nodeEvaluation-Gate1 input.gradeRe{
+    width: 40px;
+    height: 25px;
+    margin: 5px 0;
+}
+.nodeEvaluation-Gate1 .description{
+    width: 372px;
+    height: 25px;
+    margin: 5px 0;
+}
+.nodeEvaluation-Gate1 .footBorder{
+    border-top: 1px solid #9b9b9b;
+}
+.nodeEvaluation-event table{
+    width: 1070px !important;
+    margin: 5px auto;
+}
+.nodeEvaluation-event .topBorder{
+    border-bottom:1px solid #9b9b9b;
+    text-align: center;
+}
+.nodeEvaluation-event table td{
+    height: 30px;
+}
+.nodeEvaluation-event table input{
+    height:30px;
+    width: 90%;
+    margin: 5px 0;
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+.nodeEvaluationC-buttons{
+    width: 90px;
+    height:30px;
+    margin: 5px 15px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    border:1px solid #9b9b9b;
+    outline:none;
+}
+.nodeEvaluationC-submit{
+    background-color: #0560b4;
+}
+.nodeEvaluationC-cancel{
+    background-color: #ffffff;
+    color: #000000;
+}
+.nodeEvaluation-event tfoot{
+    text-align: right;
+}
+.nodeEvaluationC-buttons:hover{
+    background-color: #4e5465;
+    color: #ffffff;
+}
+.nodeEvaluationC .historyRec td,.nodeEvaluationC .historyRec th{
+    padding: 5px;
+}
+.nodeEvaluationC .historyRec thead{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    border-bottom: 1px solid #9b9b9b
+}
+
+.progressBar{
+    margin-bottom: 30px;
+}
+.nodeEvaluationC-title{
+    height: 30px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+}
+.wizard-steps {
+    list-style: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.wizard-steps li {
+    display: table-cell;
+    text-align: center;
+    width: 1%;
+}
+.wizard-steps li.active:before, .wizard-steps li.complete:before, .wizard-steps li.active .step, .wizard-steps li.complete .step {
+    border-color: #5293c4;
+}
+.wizard-steps li:first-child:before {
+    max-width: 51%;
+    left: 50%;
+}
+.wizard-steps li:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+    border-top: 4px solid #ced1d6;
+    position: relative;
+    top: 26px;
+    z-index: 1;
+}
+.wizard-steps li:last-child:before {
+    max-width: 50%;
+    width: 50%;
+}
+.wizard-steps li .step {
+    border: 5px solid #ced1d6;
+    color: #546474;
+    font-size: 15px;
+    border-radius: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.wizard-steps li .title {
+    display: block;
+    margin-top: 4px;
+    max-width: 100%;
+    color: #949ea7;
+    font-size: 14px;
+    z-index: 104;
+    text-align: center;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.riskTableC-title{
+    font-size: 16px;
+    height: 40px;
+}

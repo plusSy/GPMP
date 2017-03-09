@@ -1,0 +1,108 @@
+/*流程查询条件*/
+.queryProcess{
+    width: 1069px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.queryProcess-list{
+    width: 1078px;
+    height: 54px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.queryProcess-search{
+
+}
+.queryProcess-input>input{
+    width: 175px;
+    height: 24px;
+    border-radius:5px;
+    border: 1px solid #c2c2c2;
+    outline: none;
+    padding-left: 10px;
+}
+.queryProcess-search-header{
+    width: 1080px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.queryProcess-table{
+    margin: 0 auto;
+    width: 1039px
+}
+.queryProcess-tr{
+    height: 40px;
+}
+.queryProcess-td{
+    /*width: 470px;*/
+}
+.queryProcess-input{
+    display: inline-block;
+}
+.queryProcess-td button{
+    width: 80px;
+    height: 24px;
+    border: 1px solid #0560b4;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #0560b4;
+}
+.queryProcess-td button:hover{
+    background-color: #0560b4;
+    color: #ffffff;
+}
+
+.processList{
+    border:1px solid #c5d0dc;
+}
+.processList-table{
+    width: 1067px;
+    border-collapse: collapse;
+}
+.processList-thead{
+    height: 30px;
+    line-height: 30px;
+}
+.processList-tr{
+    width: 100%;
+}
+.processList-td{
+    width: 100%;
+}
+
+.processSecondList-table{
+    width: 1067px;
+    border-collapse: collapse;
+}
+.processList-th{
+    text-align: left;
+}
+.processList-th,.processSecondList-td{
+    width: 214px;
+    padding-left: 10px;
+}
+.processSecondList-td{
+    border-top: 1px solid #c5d0dc;
+    line-height: 20px;
+    padding: 5px 0 5px 18px;
+}
+.processSecondList-th{
+    background-color: #0560b4;
+    height: 30px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 10px;
+}
+.processSecondList-thead{
+    cursor: pointer;
+}
+.processList-title{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

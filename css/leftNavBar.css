@@ -1,0 +1,141 @@
+.b1{
+    font-family: 微软雅黑;
+}
+/*_left-nav-li针对非下拉的样式处理，如有下拉样式如left-nav-li*/
+.homeContainer{
+    width: 1340px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.header{
+    width: 1340px;
+    height: 90px;
+    background-color: #4775a9;
+    overflow: hidden;
+}
+.header-logo{
+    width: 135px;
+    padding-left: 20px;
+    float: left;
+}
+.header-logo-img{
+    /*width: 100px;*/
+    /*height: 70px;*/
+    /*border-bottom-right-radius: 5px;*/
+    /*border-bottom-left-radius: 5px;*/
+}
+.header-title{
+    float: left;
+    line-height: 90px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bolder;
+    /*padding-left: 25px;*/
+}
+.left-nav{
+    width: 245px;
+    background-color: #4775a9;
+    height: 680px;
+    border-top: 8px solid #ffffff;
+    color: #ffffff;
+    float: left;
+}
+.left-second-nav{
+    /*padding: 0 20px;*/
+    background-color: #F4F4F4;
+}
+.left-second-nav-ul{
+    display: block;
+    color: #333333;
+}
+.left-nav-ul,.left-second-nav-ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+._left-nav-li{
+    padding-left:20px;
+    width: 225px !important;
+}
+._left-nav-li:hover{
+    background-color: #25295E;
+}
+.left-nav-li{
+    width: 100%;
+    line-height: 40px;
+    font-size: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #1162b1;
+    background: -moz-linear-gradient(top, #1162b1 0%, #4d7fb8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1162b1), color-stop(100%,#4d7fb8));
+    background: -webkit-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
+    background: -o-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
+    background: -ms-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
+    background: linear-gradient(to bottom, #1162b1 0%,#4d7fb8 100%);
+    border-bottom: 1px solid #4d7fb8;
+
+}
+.left-first-nav{
+    overflow: hidden;
+    padding:0 20px;
+
+}
+.left-first-nav:hover{
+    background-color: #25295E;
+}
+.left-second-nav-li{
+    padding-left: 20px;
+    background: #F4F4F4;
+    background: -moz-linear-gradient(top, #F4F4F4 0%, #B4B4B4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F4F4F4), color-stop(100%,#B4B4B4));
+    background: -webkit-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
+    background: -o-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
+    background: -ms-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
+    background: linear-gradient(to bottom, #F4F4F4 0%,#B4B4B4 100%);
+    border-bottom: 1px solid #B4B4B4;
+}
+.left-second-nav-li:hover{
+    color: #25295E;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+
+}
+.left-nav-liTitle{
+    float: left;
+
+}
+.left-nav-liIcon{
+    float: right;
+    padding-right: 10px;
+}
+.left-nav-Icon{
+    background-color: #eeeeee;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.icon-int{
+    color: #0560b4;
+}
+.icon-out{
+    color: red;
+}
+.current{
+    background-color: #2b2e37;
+}
+.homePage-con{
+    width: 1095px;
+    float: right;
+}
+.insertIcno{
+    width: 20px;
+    height: 18px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 11px;
+}

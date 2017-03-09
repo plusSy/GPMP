@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/form-planToChange.css">
+</head>
+<body>
+    <div class="content-view">
+        <div class="view-from">
+            <div class="view-from-title">
+                <label>标题:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="view-from">
+            <div class="view-from-item fl">
+                <label>申请人:</label>
+                <input type="text">
+            </div>
+            <div class="view-from-item fl">
+                <label class="app-time">申请时间:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="view-from-title" style="margin-bottom: 15px;">
+            <label>任务名称:</label>
+            <input type="text">
+        </div>
+        <div class="view-from">
+            <div class="view-from-item fl">
+                <label>原计划时间:</label>
+                <input type="text">
+            </div>
+            <div class="view-from-item fl">
+                <label class="app-time">新计划时间:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="view-from">
+            <div>
+                <label>变更原因:</label>
+                <select class="view-select">
+                    <option>客户原因</option>
+                </select>
+                <select class="view-select">
+                    <option>客户原因</option>
+                </select>
+            </div>
+        </div>
+        <div class="view-from" style="height: 95px;">
+            <div class="view-from-info">
+                <label>备注:</label>
+                <textarea>
+                </textarea>
+            </div>
+        </div>
+        <div class="view-from">
+            <div class="view-from-item">
+                <label style="line-height: 22px;">变更记录:</label>
+                <span style="color: #0560b4;border: none;cursor: pointer;" onclick="viewPlanTimeChange()">查看计划时间变更记录</span>
+            </div>
+        </div>
+    </div>
+    <div class="itemMessage">
+        <table class="itemMessage-table">
+            <thead>
+            <tr>
+                <th class="itemMessage-table-thead" colspan="4">其他变更</th>
+            </tr>
+            <tr>
+                <th class="itemMessage-table-thead2" style="width: 40%">任务名称</th>
+                <th class="itemMessage-table-thead2" style="width: 25%">原计划时间</th>
+                <th class="itemMessage-table-thead2" style="width: 25%">新计划时间</th>
+                <th class="itemMessage-table-thead2" style="width: 10%">
+                    <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;cursor: pointer;">
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>原型样件工艺策划完成日期</td>
+                <td>2016/6/25</td>
+                <td>2016/7/1</td>
+                <td>
+                    <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;cursor: pointer;">
+                </td>
+            </tr>
+            <tr>
+                <td>2D图纸发布日期</td>
+                <td >2016/6/25</td>
+                <td>2016/7/8</td>
+                <td>
+                    <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;cursor:pointer;">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="table-button">
+            <button class="tableButton-submit">提交</button>
+            <button class="tableButton-cancel">取消</button>
+        </div>
+    </div>
+    <div class="itemMessage">
+        <div class="itemMessage-title itemMessage-title-history">
+            <span>历史记录</span>
+        </div>
+        <table class="itemMessage-table itemMessage-tableHistoryRecord">
+            <thead>
+            <tr>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 10%">操作人</th>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 15%">过程</th>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 20%">步骤</th>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 15%">操作</th>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 20%">时间</th>
+                <th class="itemMessage-table-thead2 itemMessage-table-theadHistory" style="width: 30%">审批意见</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a>张三</a></td>
+                <td>计划时间变更</td>
+                <td>责任人发起</td>
+                <td>发起</td>
+                <td>2016/10/10 9:08:35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a>李四</a></td>
+                <td>计划时间变更</td>
+                <td>项目经理审批</td>
+                <td>审批通过</td>
+                <td>2016/10/30 9:08:35</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><a>王五</a></td>
+                <td>计划时间变更</td>
+                <td>项目经理的部门经理审批</td>
+                <td>审批通过</td>
+                <td>2016/10/10 9:08:35</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function viewPlanTimeChange(){
+            window.open('./timeChangeRecord.html','newwindow', "width=900, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
+        }
+    </script>
+</body>
+</html>

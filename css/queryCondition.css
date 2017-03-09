@@ -1,0 +1,113 @@
+/*任务查询条件*/
+.queryCondition{
+    width: 1069px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.queryCondition-search{
+
+}
+.queryCondition-search-header{
+    width: 1069px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.queryCondition-list{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.queryCondition-table{
+    width: 1039px;
+    height: 120px;
+    margin: 0 30px;
+
+}
+.queryCondition-tr{
+    height: 40px;
+}
+.queryCondition-td{
+    width: 30%;
+    padding: 0 0 10px 10px;
+}
+.queryCondition-padding{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.queryCondition-input{
+    display: inline-block;
+}
+.queryCondition-input>input{
+    width: 200px;
+    height: 24px;
+    border-radius:5px;
+    border: 1px solid #c2c2c2;
+    outline: none;
+    padding-left: 10px;
+}
+.queryCondition-td button{
+    width: 80px;
+    height: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+}
+.queryCondition-td button:hover{
+    background-color: #2b2e37;
+    color: #ffffff;
+}
+.queryCondition-searchButtons{
+    width: 300px;
+    text-align: right;
+}
+.queryCondition-searchInfo{
+    color: #ffffff;
+    background-color: #0560b4;
+    border: none;
+    margin-right: 20px;
+}
+.queryCondition-clearInfo{
+    color: #0560b4;
+    background-color: #ffffff;
+    border: 1px solid #0560b4;
+    margin-right: 10px;
+}
+.queryCondition-search{
+}
+
+.conditionList{
+    border: 1px solid #ced1d6;
+}
+.conditionList-table{
+    width: 1067px;
+    border-collapse: collapse;
+}
+.conditionList-thead{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: left;
+}
+.conditionList-th{
+    text-align: left;
+}
+.conditionList-tr{
+    padding-left: 10px;
+}
+.conditionList-td{
+    line-height: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #ced1d6;
+}
+.conditionList-tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.conditionTitle{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+}

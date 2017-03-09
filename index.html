@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/leftNavBar.css">
+
+    <script src="framework/jquery/dist/jquery.js"></script>
+    <script src="index.js"></script>
+</head>
+<body class="b1">
+    <div class="homeContainer">
+        <div class="header">
+            <div class="header-logo">
+                <img src="./img/minth_logo.jpg" class="header-logo-img" alt="">
+            </div>
+            <div class="header-title">
+                <span>Global Project Management Platform</span>
+            </div>
+        </div>
+        <div class="left-nav">
+
+            <ul class="left-nav-ul">
+                <li class="left-nav-li _left-nav-li">
+                    <i><img src="images/首页.png" alt="" class="insertIcno"></i>
+                    <span>
+                        首页
+                        <!--HomePage-->
+                    </span>
+
+                </li>
+                <li class="left-nav-li _left-nav-li">
+                    <i><img src="images/人员.png" alt="" class="insertIcno"></i>
+                    <span>
+                        客户考评
+                        <!--Customer evaluation-->
+                    </span>
+                </li>
+                <li class="left-nav-li _left-nav-li">
+                    <i><img src="images/项目搜索.png" alt="" class="insertIcno"></i>
+                    <span>
+                        项目搜索
+                        <!--Search-->
+                    </span>
+                </li>
+                <li class="left-nav-li">
+                   <div class="left-first-nav">
+                       <i><img src="images/我的项目我的任务我的流程.png" alt="" class="insertIcno"></i>
+                        <span class="left-nav-liTitle">
+                        我的项目
+                            <!--Project-->
+                    </span>
+                       <div class="left-nav-liIcon">
+                           <span class="left-nav-Icon icon-int">13</span>
+                           <span class="left-nav-Icon icon-out">12</span>
+                       </div>
+                   </div>
+
+                    <div class="left-second-nav">
+                        <ul class="left-second-nav-ul" style="display: none;">
+                            <li class="left-second-nav-li">·待维护项目</li>
+                            <li class="left-second-nav-li">·开发中项目</li>
+                            <li class="left-second-nav-li">·已完成项目</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="left-nav-li">
+                    <div class="left-first-nav">
+                        <i><img src="images/我的项目我的任务我的流程.png" alt="" class="insertIcno"></i>
+                        <span class="left-nav-liTitle">
+                        我的任务
+                            <!--Tasks-->
+                    </span>
+                        <div class="left-nav-liIcon">
+                            <span class="left-nav-Icon icon-int">12</span>
+                            <span class="left-nav-Icon icon-out">10</span>
+                        </div>
+                    </div>
+                    <div class="left-second-nav">
+                        <ul class="left-second-nav-ul" style="display: none;">
+                            <li class="left-second-nav-li"><span onclick="turnTo('./projectObjective/queryCondition.html')">·进行中的任务</span></li>
+                            <li class="left-second-nav-li">·已完成的任务</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="left-nav-li">
+                    <div class="left-first-nav">
+                        <i><img src="images/我的项目我的任务我的流程.png" alt="" class="insertIcno"></i>
+                         <span class="left-nav-liTitle">
+                            我的流程
+                             <!--Procedure-->
+                        </span>
+                        <div class="left-nav-liIcon">
+                            <span class="left-nav-Icon icon-int">14</span>
+                            <span class="left-nav-Icon icon-out">19</span>
+                        </div>
+                    </div>
+                    <div class="left-second-nav">
+                        <ul class="left-second-nav-ul" style="display: none;">
+                            <li class="left-second-nav-li"><span onclick="turnTo('./projectObjective/queryProcess.html')">·我发起的流程</span></li>
+                            <li class="left-second-nav-li">·我的待办</li>
+                            <li class="left-second-nav-li"><span onclick="turnTo('./projectObjective/queryProcess.html')">·我的已办</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="left-nav-li _left-nav-li">
+                    <i><img src="images/图表.png" alt="" class="insertIcno"></i>
+                    <span>
+                        图表统计
+                        <!--Graphic Statistics-->
+                    </span>
+                </li>
+                <li class="left-nav-li _left-nav-li">
+                    <i><img src="images/设置.png" alt="" class="insertIcno"></i>
+                    <span>
+                        系统设计
+                        <!--Systematic Design-->
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="homePage-con">
+            <iframe id="iframe_first"  frameBorder="0" scrolling="no" src="" style="width:100% ;min-height: 750px;"/>
+        </div>
+    </div>
+    
+
+</body>
+</html>

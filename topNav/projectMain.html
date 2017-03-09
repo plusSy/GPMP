@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .tab-content {
+            border: 1px solid #c5d0dc;
+            padding: 16px 0px;
+            position: relative;
+            z-index: 11;
+            width: 1080px;
+            margin: 0 auto;
+        }
+        .wizard-steps {
+            list-style: none;
+            display: table;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .wizard-steps li {
+            display: table-cell;
+            text-align: center;
+            width: 1%;
+        }
+        .wizard-steps li.active:before, .wizard-steps li.complete:before, .wizard-steps li.active .step, .wizard-steps li.complete .step {
+            border-color: #5293c4;
+        }
+        .wizard-steps li:first-child:before {
+            max-width: 51%;
+            left: 50%;
+        }
+        .wizard-steps li:before {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 1px;
+            font-size: 0;
+            overflow: hidden;
+            border-top: 4px solid #ced1d6;
+            position: relative;
+            top: 26px;
+            z-index: 1;
+        }
+        .wizard-steps li:last-child:before {
+            max-width: 50%;
+            width: 50%;
+        }
+        .wizard-steps li .step {
+            border: 5px solid #ced1d6;
+            color: #546474;
+            font-size: 15px;
+            border-radius: 100%;
+            background-color: #FFF;
+            position: relative;
+            z-index: 2;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .wizard-steps li .title {
+            display: block;
+            margin-top: 4px;
+            max-width: 100%;
+            color: #949ea7;
+            font-size: 14px;
+            z-index: 104;
+            text-align: center;
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+        .table {
+            width: 100%;
+            height: 50px;
+            max-width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .table-bordered {
+            border: 1px solid #ddd;
+        }
+        .tabs-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 1080px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .tabs {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            width: 5000px;
+            border-bottom: 1px solid #2b2e37;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        .tabs-selected{
+            float: left;
+            cursor: pointer;
+            background-color: #0560b4;
+            color: #ffffff;
+            padding: 15px 20px;
+        }
+        .tabs-selected:hover{
+            background-color: #4e5465;
+        }
+        .tab-content-itmeName{
+            padding-left: 15px;
+            font-size: 14px;
+        }
+        .tabs-selected-active{
+            background-color: #4e5465 !important;
+            color: #ffffff;
+        }
+        .table-borderedLight-green{
+            width: 20px;
+            height: 20px;
+            background-color: #24b145;
+            border-radius: 20px;
+        }
+        .table-borderedLight-yellow{
+            width: 20px;
+            height: 20px;
+            background-color: #FAD732;
+            border-radius: 20px;
+        }
+        .table-borderedLight-red{
+            width: 20px;
+            height: 20px;
+            background-color: #F05050;
+            border-radius: 20px;
+        }
+    </style>
+    <script src="../framework/jquery/dist/jquery.js"></script>
+    <script src="projectMain.js"></script>
+</head>
+<body>
+<div class="tab-content">
+    <ul class="wizard-steps">
+        <li data-target="#step1" class="active"> <span class="step">1</span> <span class="title">GATE1</span> </li>
+        <li data-target="#step2" class="active"> <span class="step">2</span> <span class="title">GATE2</span> </li>
+        <li data-target="#step3" class="active"> <span class="step">3</span> <span class="title">GATE3</span> </li>
+        <li data-target="#step4" class="active"> <span class="step">4</span> <span class="title">GATE4-1</span> </li>
+        <li data-target="#step5" class="active"> <span class="step">4</span> <span class="title">GATE4-2</span> </li>
+        <li data-target="#step6"> <span class="step">5</span> <span class="title">GATE5</span> </li>
+        <li data-target="#step7"> <span class="step">S</span> <span class="title">SOP</span></li>
+    </ul>
+    <table class="table table-bordered">
+        <tbody>
+        <tr>
+            <td class="tab-content-itmeName" >项目名称:C02405-CFD701-C519-亮条-门框饰条BRIGHT STRIP DOOR FRAME</td>
+            <td align="center">
+                <div class="table-borderedLight-green"></div>
+                <!--<img src="./images/G.png">-->
+            </td>
+            <td align="center">
+                <div class="table-borderedLight-yellow"></div>
+                <!--<img src="./images/Y.png">-->
+            </td>
+            <td align="center">
+                <div class="table-borderedLight-red"></div>
+                <!--<img src="./images/R.png">-->
+            </td>
+            <td align="center">
+                <div class="table-borderedLight-red"></div>
+                <!--<img src="./images/R.png">-->
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="tabs-wrap">
+        <ul class="tabs">
+            <li class="tabs-selected">
+                <span onclick="resetSrc('../projectObjective/itemMessage.html')">项目信息及成员</span>
+            </li>
+            <li class="tabs-selected">
+                <span onclick="resetSrc('../projectObjective/projectObjective.html')">项目目标</span>
+            </li>
+            <li class="tabs-selected">
+                <span onclick="resetSrc('../projectObjective/nodeManagement.html')">节点管理</span>
+            </li>
+            <li class="tabs-selected">
+                <span onclick="resetSrc('../projectObjective/riskManagement.html')">风险管理</span>
+            </li>
+            <li class="tabs-selected active-tabs-selected">
+                <span onclick="resetSrc('../projectObjective/changeManagement.html')">变更管理</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <!--项目目标-->
+    <iframe id="iframe_second"  frameBorder="0" scrolling="no" src="../projectObjective/itemMessage.html" style="width:100% ;min-height: 750px;"/>
+    <!--节点管理-->
+    <!--<iframe name="iframe_two"  frameBorder="0" scrolling="no" src="../projectObjective/nodeManagement.html" style="width:100% ;min-height: 750px;"/>-->
+    <!--风险管理-->
+    <!--<iframe name="iframe_two"  frameBorder="0" scrolling="no" src="../projectObjective/riskManagement.html" style="width:100% ;min-height: 750px;"/>-->
+    <!--变更管理-->
+    <!--<iframe name="iframe_two"  frameBorder="0" scrolling="no" src="../projectObjective/changeManagement.html" style="width:100% ;min-height: 750px;"/>-->
+    <!--任务查询条件-->
+    <!--<iframe name="iframe_two"  frameBorder="0" scrolling="no" src="../projectObjective/queryCondition.html" style="width:100% ;min-height: 750px;"/>-->
+    <!--流程查询条件-->
+    <!--<iframe name="iframe_two"  frameBorder="0" scrolling="no" src="../projectObjective/queryProcess.html" style="width:100% ;min-height: 750px;"/>-->
+
+</div>
+</div>
+</body>
+</html>

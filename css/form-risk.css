@@ -1,0 +1,154 @@
+/*风险表单*/
+.riskTableC{
+    width: 1080px;
+    margin:0 auto;
+    font-size: 14px;
+}
+.riskTableC table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 20px;
+    border: 1px solid #9b9b9b;
+}
+.riskTableC table input{
+    border: 1px solid #CCCCCC;
+}
+.riskTableC table td{
+    height:30px;
+    padding: 0 5px;
+}
+.riskTableC table thead{
+    background-color: #0560B4;
+    color: #ffffff;
+}
+.riskTableC input[type='text'],.riskTableC select{
+    height: 30px;
+    margin: 5px 0;
+    width: 90%;
+    padding: 0 5px;
+}
+.riskTableC select{
+    width: 120px;
+}
+.riskTableC textarea{
+    width: 90%;
+    margin: 5px 0;
+}
+.riskTableC label{
+    display: inline-block;
+    width: 60px;
+}
+.riskTableC .addRiskWay{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #0560b4;
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.riskTableC .riskWay table{
+    margin: 5px 0;
+}
+.riskTableC .riskWay button{
+    border:none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.riskTableC .btnBox button{
+    width: 100px;
+    height:30px;
+    margin: 5px 15px;
+    border:1px solid #CCCCCC;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+}
+.riskTableC .btnBox button:hover{
+    background-color: #0560B4;
+    color: #ffffff;
+    -webkit-transition: 0.5s linear;
+    -moz-transition: 0.5s linear;
+    -ms-transition: 0.5s linear;
+    -o-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+
+
+.statues-choice{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: green;
+}
+
+.schedule{
+    margin-bottom: 30px;
+}
+.wizard-steps {
+    list-style: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.wizard-steps li {
+    display: table-cell;
+    text-align: center;
+    width: 1%;
+}
+.wizard-steps li.active:before, .wizard-steps li.complete:before, .wizard-steps li.active .step, .wizard-steps li.complete .step {
+    border-color: #5293c4;
+}
+.wizard-steps li:first-child:before {
+    max-width: 51%;
+    left: 50%;
+}
+.wizard-steps li:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    font-size: 0;
+    overflow: hidden;
+    border-top: 4px solid #ced1d6;
+    position: relative;
+    top: 26px;
+    z-index: 1;
+}
+.wizard-steps li:last-child:before {
+    max-width: 50%;
+    width: 50%;
+}
+.wizard-steps li .step {
+    border: 5px solid #ced1d6;
+    color: #546474;
+    font-size: 15px;
+    border-radius: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.wizard-steps li .title {
+    display: block;
+    margin-top: 4px;
+    max-width: 100%;
+    color: #949ea7;
+    font-size: 14px;
+    z-index: 104;
+    text-align: center;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.riskTableC-title{
+    font-size: 16px;
+    height: 40px;
+}

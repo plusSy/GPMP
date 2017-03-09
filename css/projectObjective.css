@@ -1,0 +1,73 @@
+/*项目目标*/
+.projectObjective{
+    width: 1080px;
+    margin: 0 auto;
+    font-size: 12px;
+    border: 1px solid #ced1d6;
+}
+.projectObjective-table{
+    width: 1080px;
+    border-collapse: collapse;
+}
+.projectObjective-table th{
+    text-align: left;
+}
+.projectObjective-table th,.projectObjective-table td{
+    border-bottom:1px solid #f2f2f2;
+    height: 20px;
+    padding:2px 30px 2px 15px
+}
+.projectObjective-rowTitle{
+    height: 40px;
+    background-color: #0560b4;
+    padding-left: 10px;
+}
+.projectObjective-title{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.projectObjective-edit{
+    width: 80px;
+    height: 24px;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.projectObjective-edit:hover{
+    background-color: #2b2e37;
+    color: #ffffff;
+}
+.projectObjective-rowTitle-addIcon{
+    width: 10px;
+    height: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.projectObjective-dimension{
+    height: 25px;
+    background-color: #f2f2f2;
+}
+.projectObjective-dimension-lib{
+    color: #000;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.statues-choice{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #24b145;
+}
+.projectObjective-rowCon{
+    line-height: 20px;
+    background-color: #ffffff;
+}
+.projectObjective-rowTwo{
+    height: 30px;
+}

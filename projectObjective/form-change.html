@@ -1,0 +1,334 @@
+<!--变更表单-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/formChange.css">
+</head>
+<body>
+    <div class="formChange">
+        <!--进度条-->
+        <div class="schedule">
+            <ul class="wizard-steps">
+                <li data-target="#step1" class="active"> <span class="step">100%</span> <span class="title">变更请求</span> </li>
+                <li data-target="#step2" class="active"> <span class="step">100%</span> <span class="title">变更评审</span> </li>
+                <li data-target="#step3" class="active"> <span class="step">100%</span> <span class="title">成本核算</span> </li>
+                <li data-target="#step4" class="active"> <span class="step">100%</span> <span class="title">变更批准</span> </li>
+                <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">变更通知</span> </li>
+                <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">变更任务</span> </li>
+                <li data-target="#step6" class="active"> <span class="step">100%</span> <span class="title">任务实施</span> </li>
+                <li data-target="#step7" class="active"> <span class="step">100%</span> <span class="title">任务实施</span></li>
+            </ul>
+        </div>
+        <!--基本信息-->
+        <div class="basicInfo">
+            <table class="basicInfo-table">
+                <thead class="basicInfo-thead">
+                <tr class="basicInfo-tr">
+                    <th class="basicInfo-th" colspan="4">基本信息</th>
+                </tr>
+                </thead>
+                <tbody class="basicInfo-tbody">
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">标题:</td>
+                    <td class="basicInfo-td" colspan="3"><input type="text" style="width: 837px;"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">申请人：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+
+                    <td class="basicInfo-td basicInfo-tag">申请时间：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--变更请求-->
+        <div class="changeRequest">
+            <table class="basicInfo-table">
+                <thead class="basicInfo-thead">
+                <tr class="basicInfo-tr">
+                    <th class="basicInfo-th" colspan="4">变更请求</th>
+                </tr>
+                </thead>
+                <tbody class="basicInfo-tbody">
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更类型:</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">变更来源:</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更阶段：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">变更原因：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">开发阶段：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">设计责任：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">产品仕向地：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">顾客名称：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">Minth变更号：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">顾客变更号：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">项目编号：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag">评审责任人：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td" colspan="4">
+                        <table class="basicInfo-tableSecond">
+                            <thead class="basicInfo-tableSecond-thead">
+                            <tr class="basicInfo-tableSecond-tr">
+                                <th class="basicInfo-tableSecond-th">零件名称</th>
+                                <th class="basicInfo-tableSecond-th">零件编号</th>
+                                <th class="basicInfo-tableSecond-th">
+                                    <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;">
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody class="basicInfo-tableSecond-tbody">
+                            <tr class="basicInfo-tableSecond-tr">
+                                <td class="basicInfo-tableSecond-td">下拉框</td>
+                                <td class="basicInfo-tableSecond-td">3416780</td>
+                                <td class="basicInfo-tableSecond-td">
+                                    <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">问题描述：</td>
+                    <td class="basicInfo-td" colspan="3">
+                        <textarea class="basicInfo-textarea" name="" id=""></textarea>
+                    </td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更前内容说明：</td>
+                    <td class="basicInfo-td" colspan="3">
+                        <textarea class="basicInfo-textarea" name="" id=""></textarea>
+                    </td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更后内容说明：</td>
+                    <td class="basicInfo-td" colspan="3">
+                        <textarea class="basicInfo-textarea" name="" id=""></textarea>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--变更评审-->
+        <div class="changeReview">
+            <table class="basicInfo-table">
+                <thead class="basicInfo-thead">
+                <tr class="basicInfo-tr">
+                    <th class="basicInfo-th" colspan="4">变更评审</th>
+                </tr>
+                </thead>
+                <tbody class="basicInfo-tbody">
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更评审记录:</td>
+                    <td class="basicInfo-td" colspan="3"><input type="text" placeholder="变更评审记录上传"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">关联供方：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+
+                    <td class="basicInfo-td basicInfo-tag">关联工厂：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更实施日期：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+
+                    <td class="basicInfo-td basicInfo-tag">断点日期：</td>
+                    <td class="basicInfo-td"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">成本专员:</td>
+                    <td class="basicInfo-td" colspan="3"><input type="text"></td>
+                </tr>
+                <tr class="basicInfo-tr">
+                    <td class="basicInfo-td basicInfo-tag">变更影响:</td>
+                    <td class="basicInfo-td" colspan="3">
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            零件信息
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            外观
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            材料
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            性能
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            功能
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            包装
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="change-content">
+            <div class="change-form">
+                <div class="change-title">
+                    <span>成本核算</span>
+                </div>
+                <div class="change-info">
+                    <span>变更费用:</span>
+                    <input class="change-input" type="text">
+                </div>
+            </div>
+            <div class="change-form">
+                <div class="change-title">
+                    <span>变更批准</span>
+                </div>
+                <div class="change-info">
+                    <span>顾客是否批准:</span>
+                    <input class="ml36" type="radio" name="sex" value="是" /><span>是</span>
+                    <input class="ml36" type="radio" name="sex" value="否"  /><span>否</span>
+                </div>
+            </div>
+            <div class="change-form">
+                <div class="change-title">
+                    <span>变更通知</span>
+                </div>
+                <div class="change-info">
+                    <span>通知人员:</span>
+                    <select>
+                        <option>San.Zhang Si,Li Si,Li</option>
+                    </select>
+                </div>
+            </div>
+            <div class="itemMessage">
+                <table class="itemMessage-table">
+                    <thead>
+                    <tr>
+                        <th class="itemMessage-table-thead" colspan="6">变更任务</th>
+                    </tr>
+                    <tr>
+                        <th class="itemMessage-table-thead2" style="width: 12%">变更任务</th>
+                        <th class="itemMessage-table-thead2" style="width: 12%">备注</th>
+                        <th class="itemMessage-table-thead2" style="width: 8%">责任人</th>
+                        <th class="itemMessage-table-thead2" style="width: 8%">新计划时间</th>
+                        <th class="itemMessage-table-thead2" style="width: 8%">实际完成时间</th>
+                        <th class="itemMessage-table-thead2" style="width: 8%">状态</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>Bing,Li</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td>
+                            <div class="statues-choice"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>Bing,Li</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td>
+                            <div class="statues-choice"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="table-button">
+                    <button class="table-button-submit">提交</button>
+                    <button class="table-button-cancel">取消</button>
+                </div>
+            </div>
+
+            <div class="itemMessage">
+                <div class="itemMessage-title">
+                    <span>历史记录</span>
+                </div>
+                <table class="itemMessage-table">
+                    <thead>
+                    <tr>
+                        <th class="itemMessage-table-thead2" style="width: 10%">操作人</th>
+                        <th class="itemMessage-table-thead2" style="width: 15%">过程</th>
+                        <th class="itemMessage-table-thead2" style="width: 20%">步骤</th>
+                        <th class="itemMessage-table-thead2" style="width: 15%">操作</th>
+                        <th class="itemMessage-table-thead2" style="width: 20%">时间</th>
+                        <th class="itemMessage-table-thead2" style="width: 30%">审批意见</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a>张三</a></td>
+                        <td>计划时间变更</td>
+                        <td>责任人发起</td>
+                        <td>发起</td>
+                        <td>2016/10/10 9:08:35</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a>李四</a></td>
+                        <td>计划时间变更</td>
+                        <td>项目经理审批</td>
+                        <td>审批通过</td>
+                        <td>2016/10/30 9:08:35</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a>王五</a></td>
+                        <td>计划时间变更</td>
+                        <td>项目经理的部门经理审批</td>
+                        <td>审批通过</td>
+                        <td>2016/10/10 9:08:35</td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*变更管理*/
+.changeManagement{
+    width: 1076px;
+    margin: 0 auto;
+    border: 1px solid #ced1d6;
+    font-size: 14px;
+}
+.changeManagement-header{
+    width: 1076px;
+    height: 40px;
+    background-color: #0560b4;
+    overflow: hidden;
+    color: #ffffff;
+}
+.changeManagement-header-left{
+    float: left;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+.changeManagement-header-right{
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.riskManagement-title{
+    width: 273px;
+}
+.riskManagement-table{
+    width: 1078px;
+    border-collapse: collapse;
+}
+.riskManagement-th{
+    font-weight: bolder;
+    padding-left: 10px;
+    height:40px;
+}
+.riskManagement-th td{
+    padding-left: 10px;
+}
+.riskManagement-tr{
+    line-height: 20px;
+}
+.riskManagement-tr td{
+    border-top: 1px solid #ced1d6;
+    padding: 5px 0 5px 10px ;
+}
+.riskManagement-tr:nth-child(even){
+    background-color: #f2f2f2;
+}

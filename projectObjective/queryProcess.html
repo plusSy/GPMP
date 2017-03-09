@@ -1,0 +1,132 @@
+<!--流程查询条件-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/queryProcess.css">
+</head>
+<body>
+    <div class="queryProcess">
+        <div class="queryProcess-search">
+            <div class="queryProcess-search-header">
+                查询条件
+            </div>
+        </div>
+        <!--查询-->
+        <div class="queryProcess-list">
+            <table class="queryProcess-table">
+                <tbody>
+                <tr class="queryProcess-tr">
+                    <td class="queryProcess-td">
+                        <span class="queryProcess-label">流程主题:</span>
+                        <div class="queryProcess-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryProcess-td">
+                        <span class="queryProcess-label">发起人:</span>
+                        <div class="queryProcess-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryProcess-td">
+                        <span class="queryProcess-label">发起时间:</span>
+                        <div class="queryProcess-input">
+                            <input type="text">
+                        </div>
+                    </td>
+                    <td class="queryProcess-td" style="text-align: right;padding-right: 20px">
+                        <button>查询</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="processList-title">
+            我的待办流程
+        </div>
+        <!--流程列表-->
+        <div class="processList">
+            <table class="processList-table">
+                <thead class="processList-thead">
+                    <tr class="processList-tr">
+                        <th class="processList-th">流程主题</th>
+                        <th class="processList-th">发起人</th>
+                        <th class="processList-th">发起时间</th>
+                        <th class="processList-th">当前状态</th>
+                        <th class="processList-th">当前处理人</th>
+                    </tr>
+                </thead>
+            </table>
+            <tbody class="processList-tbody">
+            <tr class="processList-tr">
+                <td class="processList-td" colspan="5">
+                    <table class="processSecondList-table">
+                        <thead class="processSecondList-thead">
+                            <tr class="processSecondList-tr">
+                                <th class="processSecondList-th" colspan="5">+节点评审</th>
+                            </tr>
+                        </thead>
+                        <tbody class="processSecondList-tbody">
+                            <tr class="processSecondList-tr">
+                                <td class="processSecondList-td">Gate1节点评审</td>
+                                <td class="processSecondList-td">Wang.Xiaobin</td>
+                                <td class="processSecondList-td">2017/1/1</td>
+                                <td class="processSecondList-td">发起评审</td>
+                                <td class="processSecondList-td">Li.Like(Ricky)</td>
+                            </tr>
+                            <tr class="processSecondList-tr">
+                                <td class="processSecondList-td">Gate1节点评审</td>
+                                <td class="processSecondList-td">Wang.Xiaobin</td>
+                                <td class="processSecondList-td">2017/1/1</td>
+                                <td class="processSecondList-td">发起评审</td>
+                                <td class="processSecondList-td">Li.Like(Ricky)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td class="processList-td" colspan="5">
+                    <table class="processSecondList-table">
+                        <thead class="processSecondList-thead">
+                        <tr class="processSecondList-tr">
+                            <th class="processSecondList-th" colspan="5">+计划时间变更</th>
+                        </tr>
+                        </thead>
+                        <tbody class="processSecondList-tbody">
+                        <tr class="processSecondList-tr">
+                            <td class="processSecondList-td">Gate1节点评审</td>
+                            <td class="processSecondList-td">Wang.Xiaobin</td>
+                            <td class="processSecondList-td">2017/1/1</td>
+                            <td class="processSecondList-td">发起评审</td>
+                            <td class="processSecondList-td">Li.Like(Ricky)</td>
+                        </tr>
+                        <tr class="processSecondList-tr">
+                            <td class="processSecondList-td">Gate1节点评审</td>
+                            <td class="processSecondList-td">Wang.Xiaobin</td>
+                            <td class="processSecondList-td">2017/1/1</td>
+                            <td class="processSecondList-td">发起评审</td>
+                            <td class="processSecondList-td">Li.Like(Ricky)</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </div>
+    </div>
+    <script src="../framework/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $(".processSecondList-thead").on("click",function () {
+                if($(this).next().css("display")=="none"){
+                    $(this).next().show();
+                }else{
+                    $(this).next().hide();
+                };
+            });
+        });
+    </script>
+</body>
+</html>

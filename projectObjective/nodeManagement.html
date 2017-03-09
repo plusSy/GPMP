@@ -1,0 +1,162 @@
+<!--节点管理-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/nodeManagement.css">
+</head>
+<body>
+    <div class="nodeManagement">
+        <div class="nodeManagement-title">
+            <div class="nodeManagement-title-left">Gate-节点-任务</div>
+            <div class="nodeManagement-title-right">
+                <button class="nodeManagement-button nodeManagement-change-plan" onclick="planTimeChange()">计划时间变更记录</button>
+                <button class="nodeManagement-button nodeManagement-edit">编辑</button>
+            </div>
+        </div>
+        <ul class="nodeManagement-ul">
+            <li class="nodeManagement-li">
+                <div class="nodeManagement-name">名称</div>
+                <div class="nodeManagement-capacity nodeManagement-others">职能</div>
+                <div class="nodeManagement-responsible nodeManagement-others" style="color: #000000;">责任人</div>
+                <div class="nodeManagement-beginTime nodeManagement-others">计划日期</div>
+                <div class="nodeManagement-trueTime nodeManagement-others">实际日期</div>
+                <div class="nodeManagement-planToChange nodeManagement-others">计划时间变更</div>
+                <div class="nodeManagement-forbidden nodeManagement-others">是否禁用</div>
+                <div class="nodeManagement-statue nodeManagement-others">状态</div>
+            </li>
+        </ul>
+        <!--+Gate1 -->
+        <table class="nodeManagement-gateUl">
+            <thead class="nodeManagement-gateFirstHeader">
+            <tr class="nodeManagement-gateLi">
+                <th class="nodeManagement-name">
+                    <span class="nodeManagement-gate-review-color">+Gate1</span>
+                    <button class="nodeManagement-review">发起评审</button>
+                </th>
+                <th class="nodeManagement-capacity nodeManagement-others"></th>
+                <th class="nodeManagement-responsible nodeManagement-others"></th>
+                <th class="nodeManagement-beginTime nodeManagement-others">03/07/2014</th>
+                <th class="nodeManagement-trueTime nodeManagement-others">03/07/2014</th>
+                <th class="nodeManagement-planToChange nodeManagement-others"></th>
+                <th class="nodeManagement-forbidden nodeManagement-others">
+
+                </th>
+                <th class="nodeManagement-statue nodeManagement-others">
+                    <div class="statues-choice"></div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--新项目开发任务书下达-->
+            <tr class="nodeManagement-gateSecond">
+                <table class="nodeManagement-gateSecond-ul">
+                    <thead class="nodeManagement-gateSecondHeader">
+                    <tr class="nodeManagement-gateSecond-li">
+                        <th class="nodeManagement-name">
+                            <span class="nodeManagement-gate-review">+新项目开发任务书下达</span>
+                        </th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others">03/07/2014</th>
+                        <th class="nodeManagement-others">03/07/2014</th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others">
+                            <div class="statues-choice"></div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="nodeManagement-gatedetails-li">
+                        <td class="nodeManagement-name" style="padding-left: 30px">开发任务书</td>
+                        <td class="nodeManagement-others">项目管理</td>
+                        <td class="nodeManagement-others nodeManagement-responsible">Qin.Yachuang</td>
+                        <td class="nodeManagement-others">03/07/2014</td>
+                        <td class="nodeManagement-others">03/07/2014</td>
+                        <td class="nodeManagement-others"></td>
+                        <td class="nodeManagement-others">
+                            <div class="nodeManagementSwitchBox">
+                                <input class="nodeManagementSwitch" type="checkbox" id="l3" name="button"/>
+                                <label class="nodeManagementLabel" for="l3"></label>
+                            </div>
+                        </td>
+                        <td class="nodeManagement-others">
+                            <div class="statues-choice"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </tr>
+            <!--项目启动会议-->
+            <tr class="nodeManagement-gateSecond">
+                <table class="nodeManagement-gateSecond-ul">
+                    <thead class="nodeManagement-gateSecondHeader">
+                    <tr class="nodeManagement-gateSecond-li">
+                        <th class="nodeManagement-name">
+                            <span class="nodeManagement-gate-review">+项目启动会议</span>
+                        </th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others">03/07/2014</th>
+                        <th class="nodeManagement-others">03/07/2014</th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others"></th>
+                        <th class="nodeManagement-others">
+                            <div class="statues-choice"></div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="nodeManagement-gatedetails-li">
+                        <td class="nodeManagement-name" style="padding-left: 30px">项目启动会议报告</td>
+                        <td class="nodeManagement-others">项目管理</td>
+                        <td class="nodeManagement-others nodeManagement-responsible">Qin.Yachuang</td>
+                        <td class="nodeManagement-others">03/07/2014</td>
+                        <td class="nodeManagement-others">03/07/2014</td>
+                        <td class="nodeManagement-others"></td>
+                        <td class="nodeManagement-others">
+                            <div class="nodeManagementSwitchBox">
+                                <input class="nodeManagementSwitch" type="checkbox" id="l2" name="button"/>
+                                <label class="nodeManagementLabel" for="l2"></label>
+                            </div>
+                        </td>
+                        <td class="nodeManagement-others">
+                            <div class="statues-choice"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../framework/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+//            一级
+            $(".nodeManagement-gateFirstHeader").on("click",function () {
+                if($(this).next().css("display")=="none"){
+                    $(this).next().show();
+                }else{
+                    $(this).next().hide();
+                };
+            });
+//            二级
+            $(".nodeManagement-gateSecondHeader").on("click",function () {
+                if($(this).next().css("display")=="none"){
+                    $(this).next().show();
+                }else{
+                    $(this).next().hide();
+                };
+            });
+        });
+        function planTimeChange(){
+            debugger;
+            window.open('./form-PlanToChange.html','newwindow', "width=900, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
+        }
+    </script>
+</body>
+</html>
