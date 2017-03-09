@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/app.css">
     <link rel="stylesheet" href="../css/formChange.css">
 </head>
 <body>
@@ -32,7 +33,7 @@
                 <tbody class="basicInfo-tbody">
                 <tr class="basicInfo-tr">
                     <td class="basicInfo-td basicInfo-tag">标题:</td>
-                    <td class="basicInfo-td" colspan="3"><input type="text" style="width: 837px;"></td>
+                    <td class="basicInfo-td" colspan="3"><input type="text" style="width: 610px;"></td>
                 </tr>
                 <tr class="basicInfo-tr">
                     <td class="basicInfo-td basicInfo-tag">申请人：</td>
@@ -96,14 +97,18 @@
                             <tr class="basicInfo-tableSecond-tr">
                                 <th class="basicInfo-tableSecond-th">零件名称</th>
                                 <th class="basicInfo-tableSecond-th">零件编号</th>
-                                <th class="basicInfo-tableSecond-th">
+                                <th class="basicInfo-tableSecond-th" style="width: 10%">
                                     <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;">
                                 </th>
                             </tr>
                             </thead>
                             <tbody class="basicInfo-tableSecond-tbody">
                             <tr class="basicInfo-tableSecond-tr">
-                                <td class="basicInfo-tableSecond-td">下拉框</td>
+                                <td class="basicInfo-tableSecond-td">
+                                    <select >
+                                        <option>请选择</option>
+                                    </select>
+                                </td>
                                 <td class="basicInfo-tableSecond-td">3416780</td>
                                 <td class="basicInfo-tableSecond-td">
                                     <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;">
@@ -234,15 +239,21 @@
                 <table class="itemMessage-table">
                     <thead>
                     <tr>
-                        <th class="itemMessage-table-thead" colspan="6">变更任务</th>
+                        <th class="itemMessage-table-thead" colspan="8">变更任务</th>
                     </tr>
                     <tr>
                         <th class="itemMessage-table-thead2" style="width: 12%">变更任务</th>
                         <th class="itemMessage-table-thead2" style="width: 12%">备注</th>
                         <th class="itemMessage-table-thead2" style="width: 8%">责任人</th>
-                        <th class="itemMessage-table-thead2" style="width: 8%">新计划时间</th>
-                        <th class="itemMessage-table-thead2" style="width: 8%">实际完成时间</th>
-                        <th class="itemMessage-table-thead2" style="width: 8%">状态</th>
+                        <th class="itemMessage-table-thead2" style="width: 10%">新计划时间</th>
+                        <th class="itemMessage-table-thead2" style="width: 10%">实际完成时间</th>
+                        <th class="itemMessage-table-thead2" style="width: 3%">状态</th>
+                        <th class="itemMessage-table-thead2" style="width: 3%">
+                            <input type="checkbox">
+                        </th>
+                        <th class="itemMessage-table-thead2" style="width: 3%">
+                            <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;">
+                        </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -259,6 +270,12 @@
                         <td>
                             <div class="statues-choice"></div>
                         </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button style="border: none;background-color: #ffffff;cursor: pointer;">╳</button>
+                        </td>
                     </tr>
                     <tr>
                         <td>
@@ -272,6 +289,12 @@
                         <td><input type="text"></td>
                         <td>
                             <div class="statues-choice"></div>
+                        </td>
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        <td>
+                            <button style="border: none;background-color: #ffffff;cursor: pointer;">╳</button>
                         </td>
                     </tr>
                     </tbody>

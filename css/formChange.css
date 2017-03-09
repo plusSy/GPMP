@@ -1,23 +1,32 @@
 /*变更表单*/
 .formChange{
-    width: 1080px;
-    margin: 0 auto;
+    width: 800px;
+    margin: 0 auto 30px;
     font-size: 14px;
+}
+.formChange table td{
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .basicInfo{
     border: 1px solid #9b9b9b;
 }
 .basicInfo-table{
-    width: 1080px;
+    width: 800px;
     border-collapse: collapse;
 }
+
 .basicInfo-thead .basicInfo-tr{
     height: 30px;
     color: #ffffff;
     background-color: #0560b4;
     text-align: left;
 }
+.basicInfo-tr{
+    margin-bottom: 30px;
+}
 .basicInfo-th{
+    width: 800px;
     padding-left: 10px;
 }
 .basicInfo-td{
@@ -25,22 +34,19 @@
     padding-left: 10px;
 }
 .basicInfo-td>input{
-    width: 300px;
+    width: 214px;
     height: 24px;
-    border: 1px solid #9b9b9b;
-    border-radius: 5px;
-    padding-left: 10px;
 }
 .changeRequest{
     margin-top: 20px;
     border:1px solid #9b9b9b;
 }
 .basicInfo-tag{
-    width: 150px;
+    width: 113px;
     font-size: 14px;
 }
 .basicInfo-tableSecond{
-    width: 1060px;
+    width: 95%;
     border-collapse: collapse;
     border: 1px solid #9b9b9b;
 }
@@ -50,10 +56,19 @@
     height: 20px;
     border-top: 1px solid #9b9b9b;
 }
+.basicInfo-tableSecond-td select{
+    width: 80%;
+    height: 30px;
+    margin: 3px 0;
+}
+.basicInfo-tableSecond-td img, .basicInfo-tableSecond-th img{
+    padding-top: 6px;
+}
 .basicInfo-textarea{
     margin-top: 20px;
-    width: 894px;
+    width: 626px;
     height: 100px;
+    resize: none;
 }
 .changeReview{
     width: 100%;
@@ -69,14 +84,14 @@
 
 
 .change-content {
-    width: 1080px;
-    margin: 30px auto 0;
+    width: 800px;
+    margin-top: 30px;
 }
 .change-form {
     width: 100%;
 }
 .change-content .change-form .change-title {
-    width: 1070px;
+    width: 790px;
     height: 30px;
     background-color: #0560b4;
     color: #ffffff;
@@ -94,6 +109,9 @@
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+}
+.change-info input[type='radio']{
+    margin-right: 10px;
 }
 .change-content .change-form .change-info .change-input{
     height: 24px;
@@ -159,8 +177,7 @@
 }
 .table-button button {
     width: 100px;
-    height: 35px;
-    border: 1px solid #9b9b9b;
+    height: 24px;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -168,10 +185,13 @@
 .table-button-submit{
     background-color: #0560b4;
     color: #ffffff;
+    border: none;
+    margin-right: 20px;
 }
 .table-button-cancel{
+    border: 1px solid #24b145;
     background-color: #ffffff;
-    color: #000000;
+    color: #24b145;
 }
 .table-button button:hover{
     background-color: #4e5465;
