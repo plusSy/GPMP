@@ -88,7 +88,6 @@
     font-size: 14px;
     font-weight: bolder;
     cursor: pointer;
-    padding-left: 10px;
 }
 .nodeManagement-gate-review-color{
     color: #ffffff;
@@ -97,8 +96,6 @@
     cursor: pointer;
 }
 .nodeManagement-review{
-    width: 100px;
-    height: 24px;
     font-size: 14px;
     margin-left: 33px;
     border: none;
@@ -107,6 +104,7 @@
     color: #000000;
     background-color: #ffffff;
     cursor: pointer;
+    padding: 3px 15px;
 }
 .nodeManagement-review:hover{
     background-color: #4e5465;
@@ -153,7 +151,7 @@
     cursor: pointer;
     transition: background-color .1s ease-out;
     box-shadow:1px 1px 3px rgba(100,100,100,0.6);
-    margin-top: 4px;
+    margin-top: 10px;
     /*border: 1px solid #0560b4;*/
     /*pointer-events: none;//禁止当前元素所有触发动作*/
 }

@@ -74,20 +74,17 @@
     border-bottom: 1px solid #055094;
 
 }
-.left-nav-li span:hover{
-    background-color: #25295E !important;
-}
 .left-first-nav{
     overflow: hidden;
     padding:15px 0 15px 20px;
-
 }
 .left-first-nav:hover{
     background-color: #25295E;
 }
 .left-second-nav-li{
-    padding-top: 15px;
+    width: 225px;
     padding-left: 20px;
+    padding-top: 15px;
     padding-bottom: 15px;
     background: #F4F4F4;
     background: -moz-linear-gradient(top, #FFFFFF 0%, #E4E4E4 100%);

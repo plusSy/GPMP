@@ -26,6 +26,7 @@
     margin-bottom: 30px;
 }
 .basicInfo-th{
+    text-align: left;
     width: 800px;
     padding-left: 10px;
 }
@@ -34,7 +35,7 @@
     padding-left: 10px;
 }
 .basicInfo-td>input{
-    width: 214px;
+    width: 240px;
     height: 24px;
 }
 .changeRequest{
@@ -46,7 +47,7 @@
     font-size: 14px;
 }
 .basicInfo-tableSecond{
-    width: 95%;
+    width: 98%;
     border-collapse: collapse;
     border: 1px solid #9b9b9b;
 }
@@ -66,7 +67,7 @@
 }
 .basicInfo-textarea{
     margin-top: 20px;
-    width: 617px;
+    width: 96%;
     height: 100px;
     resize: none;
     padding: 10px 0 0 10px;
@@ -89,7 +90,10 @@
     margin-top: 30px;
 }
 .change-form {
+    margin-bottom: 30px;
     width: 100%;
+    border: 1px solid #9b9b9b;
+    height: 74px;
 }
 .change-content .change-form .change-title {
     width: 790px;
@@ -102,26 +106,28 @@
     padding-left: 10px;
 }
 .change-content .change-form .change-info {
+    width: 44%;
     height: 40px;
-    border: 1px solid #9b9b9b;
     line-height: 40px;
     font-size: 14px;
     padding-left: 12px;
     margin-bottom: 20px;
     position: relative;
     overflow: hidden;
+    display: inline-block;
 }
 .change-info input[type='radio']{
     margin-right: 10px;
 }
 .change-content .change-form .change-info .change-input{
     height: 24px;
-    margin-left: 60px;
+    margin-left: 59px;
+    width: 211px;
 }
 .change-content .change-form .change-info select{
     height: 34px;
-    margin-left: 60px;
-    width: 40%;
+    margin-left: 50px;
+    width: 63%;
 }
 .ml36{
     margin-left: 36px;
@@ -141,8 +147,10 @@
     height: 30px;
     font-size: 12px;
 }
+.itemMessage-table tr{
+    border-top: 1px solid #9b9b9b;
+}
 .itemMessage-table tr > th,.itemMessage-table tr > td{
-    border: 1px solid #9b9b9b;
     height: 30px;
     padding-left: 10px;
 }
@@ -153,10 +161,10 @@
     border-right: 0;
     border-left: 0;
 }
-.itemMessage-table tr > td input {
+.itemMessage-table tr > td input[type='text'] {
     padding: 0 5px;
     height: 90%;
-    width: 90%;
+    width: 100px;
 }
 .itemMessage-table-thead{
     padding-left: 10px;
@@ -193,9 +201,9 @@
     margin-right: 20px;
 }
 .table-button-cancel{
-    border: 1px solid #24b145;
+    border: 1px solid #0560b4;
     background-color: #ffffff;
-    color: #24b145;
+    color: #0560b4;
 }
 .table-button button:hover{
     background-color: #4e5465;
