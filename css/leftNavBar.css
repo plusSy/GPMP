@@ -10,7 +10,7 @@
 .header{
     width: 1340px;
     height: 90px;
-    background-color: #4775a9;
+    background-color: #055094;
     overflow: hidden;
 }
 .header-logo{
@@ -34,7 +34,7 @@
 }
 .left-nav{
     width: 245px;
-    background-color: #4775a9;
+    background-color: #055094;
     height: 680px;
     border-top: 8px solid #ffffff;
     color: #ffffff;
@@ -55,46 +55,48 @@
     margin: 0;
 }
 ._left-nav-li{
-    padding-left:20px;
-    width: 225px !important;
-}
-._left-nav-li:hover{
-    background-color: #25295E;
+    /*padding-left:20px;*/
+    width: 245px !important;
+    height: 45px;
 }
 .left-nav-li{
     width: 100%;
-    line-height: 40px;
     font-size: 14px;
     overflow: hidden;
     cursor: pointer;
     background: #1162b1;
-    background: -moz-linear-gradient(top, #1162b1 0%, #4d7fb8 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1162b1), color-stop(100%,#4d7fb8));
-    background: -webkit-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
-    background: -o-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
-    background: -ms-linear-gradient(top, #1162b1 0%,#4d7fb8 100%);
-    background: linear-gradient(to bottom, #1162b1 0%,#4d7fb8 100%);
-    border-bottom: 1px solid #4d7fb8;
+    background: -moz-linear-gradient(top, #0560B3 0%, #055094 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0560B3), color-stop(100%,#055094));
+    background: -webkit-linear-gradient(top, #0560B3 0%,#055094 100%);
+    background: -o-linear-gradient(top, #0560B3 0%,#055094 100%);
+    background: -ms-linear-gradient(top, #0560B3 0%,#055094 100%);
+    background: linear-gradient(to bottom, #0560B3 0%,#055094 100%);
+    border-bottom: 1px solid #055094;
 
+}
+.left-nav-li span:hover{
+    background-color: #25295E !important;
 }
 .left-first-nav{
     overflow: hidden;
-    padding:0 20px;
+    padding:15px 0 15px 20px;
 
 }
 .left-first-nav:hover{
     background-color: #25295E;
 }
 .left-second-nav-li{
+    padding-top: 15px;
     padding-left: 20px;
+    padding-bottom: 15px;
     background: #F4F4F4;
-    background: -moz-linear-gradient(top, #F4F4F4 0%, #B4B4B4 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F4F4F4), color-stop(100%,#B4B4B4));
-    background: -webkit-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
-    background: -o-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
-    background: -ms-linear-gradient(top, #F4F4F4 0%,#B4B4B4 100%);
-    background: linear-gradient(to bottom, #F4F4F4 0%,#B4B4B4 100%);
-    border-bottom: 1px solid #B4B4B4;
+    background: -moz-linear-gradient(top, #FFFFFF 0%, #E4E4E4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(100%,#E4E4E4));
+    background: -webkit-linear-gradient(top, #FFFFFF 0%,#E4E4E4 100%);
+    background: -o-linear-gradient(top, #FFFFFF 0%,#E4E4E4 100%);
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#E4E4E4 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%,#E4E4E4 100%);
+    border-bottom: 1px solid #E4E4E4;
 }
 .left-second-nav-li:hover{
     color: #25295E;
@@ -107,17 +109,21 @@
 }
 .left-nav-liTitle{
     float: left;
+    display: inline-block;
 
 }
 .left-nav-liIcon{
+    overflow: hidden;
     float: right;
     padding-right: 10px;
 }
 .left-nav-Icon{
+    text-align: center;
     background-color: #eeeeee;
     font-size: 12px;
-    border-radius: 20px;
-    padding: 5px;
+    width: 20px;
+    display: inline-block;
+    padding: 3px 3px 0 3px;
 }
 .icon-int{
     color: #0560b4;
