@@ -281,3 +281,6 @@
     table-layout: fixed;
     word-wrap: break-word;
 }
+.itemMessage .itemMessage-table tbody td{
+    padding:2px 0 2px 10px;
+}
