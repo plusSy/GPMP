@@ -25,6 +25,8 @@
 }
 .nodeEvaluationC table td{
     height:30px;
+    padding-bottom: 3px;
+    padding-top: 3px;
     padding-left: 10px;
 }
 .nodeEvaluationC table thead{
@@ -52,8 +54,11 @@
 }
 .nodeEvaluation-Gate1 .description{
     width: 240px;
-    height: 25px;
+    height: 50px;
     margin: 5px 0;
+    padding: 5px 0 0 5px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
 }
 .nodeEvaluation-Gate1 .footBorder{
     border-top: 1px solid #9b9b9b;
