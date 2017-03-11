@@ -32,6 +32,7 @@
 }
 .view-from-item input{
     width: 190px;
+    height: 24px;
     line-height: 30px;
     display: inline-block;
     border:1px solid #c2c2c2;
@@ -43,6 +44,7 @@
 }
 .view-from-title input{
     width: 627px;
+    height: 24px;
     line-height: 30px;
     display: inline-block;
     border:1px solid #c2c2c2;

@@ -13,7 +13,7 @@
     font-weight: bold;
 }
 .nodeEvaluationC table{
-    width: 100%;
+    width: 99%;
     border-collapse: collapse;
     margin: 0 auto 20px;
     border: 1px solid #9b9b9b;
@@ -21,11 +21,11 @@
 .nodeEvaluationC table input{
     border: 1px solid #CCCCCC;
     /*width: 90%;*/
-    padding:0 5px;
+    /*padding:0 5px;*/
 }
 .nodeEvaluationC table td{
     height:30px;
-    padding: 0 5px;
+    padding-left: 10px;
 }
 .nodeEvaluationC table thead{
     background-color: #0560B4;
@@ -40,10 +40,10 @@
 .nodeEvaluation-Gate1 .splitLine{
     background-color: #f2f2f2;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .nodeEvaluation-Gate1 td{
-    text-align: center;
+    text-align: left;
 }
 .nodeEvaluation-Gate1 input.gradeRe{
     width: 40px;
@@ -58,23 +58,18 @@
 .nodeEvaluation-Gate1 .footBorder{
     border-top: 1px solid #9b9b9b;
 }
-.nodeEvaluation-event table{
-    width: 788px !important;
-    margin: 5px auto;
-}
 .nodeEvaluation-event .topBorder{
     border-bottom:1px solid #9b9b9b;
-    text-align: center;
+    text-align: left;
 }
 .nodeEvaluation-event table td{
     height: 30px;
 }
 .nodeEvaluation-event table input{
     height:30px;
-    width: 90%;
     margin: 5px 0;
     border: 1px solid #CCCCCC;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 .nodeEvaluationC-buttons{
     width: 90px;
@@ -92,8 +87,8 @@
 }
 .nodeEvaluationC-cancel{
     background-color: #ffffff;
-    color: #24b145;
-    border:1px solid #24b145;
+    color: #0560b4;
+    border:1px solid #0560b4;
 }
 .nodeEvaluation-event tfoot{
     text-align: right;
@@ -110,9 +105,15 @@
     background-color: #ffffff;
     color: #000000;
     text-align: left;
-    border-bottom: 1px solid #9b9b9b
+    border-bottom: 1px solid #9b9b9b;
 }
-
+.historyRec thead tr th{
+    text-align: left;
+    padding: 5px 0 5px 10px !important;
+}
+.historyRec tbody tr td{
+    padding: 0 0 0 10px !important;
+}
 .progressBar{
     margin-bottom: 30px;
 }
@@ -192,14 +193,21 @@
     height: 24px;
 }
 .nodeEvaluationC-input-title{
-    width: 648px ;
+    width: 626px ;
 }
 .nodeEvaluationC-input-man{
-    width: 251px;
+    width: 231px;
 }
 .nodeEvaluationC-input-time{
-    width: 250px;
+    width: 230px;
 }
 .nodeEvaluationC-input-tag{
     width: 90px;
+}
+.nodeEvaluation-table{
+    width: 98% !important;
+    margin-top: 30px !important;
+}
+.nodeEvaluation-table tr td input{
+    width: 100px;
 }
