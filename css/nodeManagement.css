@@ -80,6 +80,9 @@
 .nodeManagement-gateLi{
     overflow: hidden;
 }
+.nodeManagement-gateLi th{
+    text-align: left;
+}
 .nodeManagement-gateLi div{
     float: left;
 }
@@ -97,14 +100,14 @@
 }
 .nodeManagement-review{
     font-size: 14px;
-    margin-left: 33px;
     border: none;
     outline: none;
     border-radius: 5px;
     color: #000000;
     background-color: #ffffff;
     cursor: pointer;
-    padding: 3px 15px;
+    margin: 3px 0 3px 33px;
+    padding: 0 15px;
 }
 .nodeManagement-review:hover{
     background-color: #4e5465;
@@ -114,6 +117,9 @@
     height: 30px;
     background-color: #f2f2f2;
     border-top: 1px solid #c2c2c2;
+}
+.nodeManagement-gateSecond-li th{
+    text-align: left;
 }
 .nodeManagement-gateSecond-li div{
     float: left;
