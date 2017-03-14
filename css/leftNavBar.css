@@ -1,4 +1,4 @@
-.b1{
+﻿.b1{
     font-family: 微软雅黑;
 }
 /*_left-nav-li针对非下拉的样式处理，如有下拉样式如left-nav-li*/
@@ -10,7 +10,7 @@
 .header{
     width: 1340px;
     height: 90px;
-    background-color: #055094;
+    background-color: #0560B3;
     overflow: hidden;
 }
 .header-logo{
@@ -120,7 +120,7 @@
     font-size: 12px;
     width: 20px;
     display: inline-block;
-    padding: 3px 3px 0 3px;
+    padding: 2px 3px 0 3px;
 }
 .icon-int{
     color: #0560b4;
@@ -141,4 +141,18 @@
     float: left;
     padding-top: 10px;
     padding-right: 11px;
+}
+.left-nav-Icon-second{
+    text-align: center;
+    background-color: #0560b4;
+    font-size: 12px;
+    width: 20px;
+    display: inline-block;
+    padding: 2px 3px 0 3px;
+}
+.icon-second-int{
+    color: #ffffff;
+}
+.icon-second-out{
+    color: #ffffff;
 }
