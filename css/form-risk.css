@@ -179,3 +179,54 @@
 .riskTablec-tag{
     width: 120px;
 }
+
+
+.itemMessage{
+    width: 800px;
+    background-color: #ffffff;
+    margin: 50px auto 0;
+}
+.itemMessage-table{
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid #9b9b9b;
+}
+.itemMessage-tableHistoryRecord{
+    font-size: 12px;
+}
+.itemMessage-title {
+    height: 30px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.itemMessage-title-history{
+    font-size: 14px;
+}
+.itemMessage-table tr > th,.itemMessage-table tr > td{
+    border: 1px solid #9b9b9b;
+    line-height: 20px;
+    text-align: left;
+    padding: 3px 0 3px 10px;
+}
+.itemMessage-table tr > td a {
+    color:#0560b4 ;
+}
+.itemMessage-table tr > th,.itemMessage-table tr > td {
+    border-right: 0;
+    border-left: 0;
+}
+.itemMessage-table-thead{
+    padding-left: 10px;
+    background-color: #0560b4;
+    color: #ffffff;
+    font-size: 16px;
+}
+.itemMessage-table-thead2{
+    padding-left: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+.itemMessage-table-theadHistory{
+    font-size: 12px;
+}
