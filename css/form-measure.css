@@ -1,0 +1,66 @@
+.measure{
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.measure-table{
+    width: 100%;
+}
+.measure-tr{
+    width: 100%;
+    margin-top: 10px;
+}
+.measure-div{
+    overflow: hidden;
+}
+.measuru-flag{
+    width: 30%;
+    text-align: left;
+    float: left;
+    line-height: 30px;
+}
+.measuru-input{
+    width: 70%;
+    float: right;
+}
+.measuru-input textarea{
+    width:96%;
+    height: 65px;
+    border:1px solid #2b2e37;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    padding: 10px 0 0 10px;
+}
+.measuru-input input[type='text']{
+    width:96%;
+    height: 30px;
+    border:1px solid #2b2e37;
+    outline: none;
+}
+.measuru-input input[type='radio']:last-child{
+    margin-left: 40px;
+}
+.measuru-input button{
+    float: right;
+    width: 100px;
+    height: 24px;
+    margin: 5px 15px;
+    border:1px solid #0560b4;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+.measuru-input button:hover{
+    background-color: #2b2e37;
+    color: #FFFFFF;
+}
+.measure-save{
+    background-color: #0560b4;
+    color: #FFFFFF;
+}
+.measure-cancel{
+    background-color: #FFFFFF;
+    color: #0560B4;
+}
