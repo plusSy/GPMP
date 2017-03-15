@@ -105,17 +105,16 @@
                 <div class="measure-div">
                     <div class="measuru-flag"></div>
                     <div class="measuru-input">
-                        <button class="measure-cancel" onclick="backhhh()">取消</button>
-                        <button class="measure-save" onclick="backhhh()">保存</button>
+                        <button class="measure-cancel" onclick="backOrClose()">取消</button>
+                        <button class="measure-save" onclick="backOrClose()">保存</button>
                     </div>
                 </div>
             </li>
         </ul>
     </div>
     <script>
-        function backhhh() {
-            alert("sss");
-            window.history.go(-1);
+        function backOrClose() {
+            window.close();
         }
     </script>
 </body>
