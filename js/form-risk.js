@@ -4,8 +4,8 @@
  */
 $(function(){
     //添加模版
-    var newTr = "<tr><td><input type='text'></td><td><input type='text'></td><td><select name='' style='width: 120px;'>"+
-    "<option value='0'>请选择</option></select></td><td style='color: #0560b4;'>张三</td><td><input type='text'></td>"+
+    var newTr = "<tr><td><input type='text'></td><td><select  style='width: 80px;'><option value='0'>请选择</option><option value='1'>临时</option> <option value='2'>长久</option></select></td>"+
+            "<td><input type='text'></td><td><select name='' style='width: 120px;'>"+ "<option value='0'>请选择</option></select></td><td style='color: #0560b4;'>张三</td><td><input type='text'></td>"+
             "<td><input type='text'></td><td><div class='statues-choice'></div></td><td><input type='checkbox'></td>"+
             "<td><button>╳</button></td></tr>";
     $(".addRiskWay").on("click",function () {
