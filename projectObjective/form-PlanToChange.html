@@ -66,24 +66,28 @@
         <table class="itemMessage-table">
             <thead>
             <tr>
-                <th class="itemMessage-table-thead" colspan="4">其他变更</th>
+                <td class="itemMessage-table-thead" colspan="4">其他变更</td>
             </tr>
             <tr>
-                <th class="itemMessage-table-thead2" style="width: 40%">任务名称</th>
-                <th class="itemMessage-table-thead2" style="width: 25%">原计划时间</th>
-                <th class="itemMessage-table-thead2" style="width: 25%">新计划时间</th>
-                <th class="itemMessage-table-thead2" style="width: 10%">
-                    <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;cursor: pointer;">
-                </th>
+                <td class="itemMessage-table-thead2" style="width: 40%">任务名称</td>
+                <td class="itemMessage-table-thead2" style="width: 25%">原计划时间</td>
+                <td class="itemMessage-table-thead2" style="width: 25%">新计划时间</td>
+                <td class="itemMessage-table-thead2" style="width: 10%">
+                    <img src="../img/add-icno.png" class="addPlanWay" alt="" style="width: 20px;height: 20px;cursor: pointer;">
+                </td>
             </tr>
-            </thead>
-            <tbody>
             <tr>
-                <td>原型样件工艺策划完成日期</td>
-                <td>2016/6/25</td>
-                <td>2016/7/1</td>
                 <td>
-                    <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;cursor: pointer;">
+                    <span>原型样件工艺策划完成日期</span>
+                </td>
+                <td>
+                    <span>2016/6/25</span>
+                </td>
+                <td>
+                    <span>2016/7/1</span>
+                </td>
+                <td>
+                    <img src="../img/close-icno.png" class="removePlanWay"  alt="" style="width: 20px;height: 20px;cursor: pointer;">
                 </td>
             </tr>
             <tr>
@@ -91,7 +95,7 @@
                 <td >2016/6/25</td>
                 <td>2016/7/8</td>
                 <td>
-                    <img src="../img/close-icno.png" alt="" style="width: 20px;height: 20px;cursor:pointer;">
+                    <img src="../img/close-icno.png" class="removePlanWay" alt="" style="width: 20px;height: 20px;cursor:pointer;">
                 </td>
             </tr>
             </tbody>
@@ -144,10 +148,7 @@
             </tbody>
         </table>
     </div>
-    <script>
-        function viewPlanTimeChange(){
-            window.open('./timeChangeRecord.html','newwindow', "width=900, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
-        }
-    </script>
+    <script src="../framework/jquery/dist/jquery.js"></script>
+    <script src="../js/form-planToChange.js"></script>
 </body>
 </html>
