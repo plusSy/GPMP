@@ -11,16 +11,12 @@ $(function(){
         //父结点删除
         a.append(newTr);
     });
-    $(".itemMessage-table tbody tr td").delegate('.removePlanWay', 'click', function(e) {
+    $(".itemMessage-table tbody").delegate('img[class="removePlanWay"]', 'click', function() {
         //获取当前要删除的行 tr
-        console.log('ggggg');
-        e.preventDefault();
-        debugger;
         var delTr = $(this).parent().parent();
-        console.log(delTr);
         delTr.remove();
     });
-})();
+});
 
 function viewPlanTimeChange(){
     window.open('./timeChangeRecord.html','newwindow', "width=900, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
