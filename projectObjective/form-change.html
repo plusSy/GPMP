@@ -87,8 +87,8 @@
                 <tr class="basicInfo-tr">
                     <td class="basicInfo-td basicInfo-tag">项目编号：</td>
                     <td class="basicInfo-td"><input type="text"></td>
-                    <td class="basicInfo-td basicInfo-tag">评审责任人：</td>
-                    <td class="basicInfo-td"><input type="text"></td>
+                    <td class="basicInfo-td basicInfo-tag"></td>
+                    <td class="basicInfo-td"></td>
                 </tr>
                 <tr class="basicInfo-tr">
                     <td class="basicInfo-td" colspan="4">
@@ -136,18 +136,6 @@
                         <textarea class="basicInfo-textarea" name="" id=""></textarea>
                     </td>
                 </tr>
-                </tbody>
-            </table>
-        </div>
-        <!--变更评审-->
-        <div class="changeReview">
-            <table class="basicInfo-table">
-                <thead class="basicInfo-thead">
-                <tr class="basicInfo-tr">
-                    <th class="basicInfo-th" colspan="4">变更评审</th>
-                </tr>
-                </thead>
-                <tbody class="basicInfo-tbody">
                 <tr class="basicInfo-tr">
                     <td class="basicInfo-td basicInfo-tag">变更评审记录:</td>
                     <td class="basicInfo-td" colspan="3"><input type="text" placeholder="变更评审记录上传"></td>
@@ -175,31 +163,54 @@
                     <td class="basicInfo-td" colspan="3">
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            零件信息
+                            项目经理
                         </div>
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            外观
+                            承接业务员
                         </div>
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            材料
+                            项目工程师
                         </div>
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            性能
+                            设计工程师
                         </div>
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            功能
+                            工装工程师
                         </div>
                         <div class="basicInfo-checkBox">
                             <input type="checkbox">
-                            包装
+                            工艺策划工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            质量工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            供应商质量工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            量产经理／量产工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            检测工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            包装工程师
+                        </div>
+                        <div class="basicInfo-checkBox">
+                            <input type="checkbox">
+                            原型样件工程师
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
             </table>
         </div>
@@ -242,42 +253,43 @@
                 </div>
             </div>
             <div class="itemMessage">
-                <table class="itemMessage-table">
+                <table class="itemMessage-table romveChange">
                     <thead>
                     <tr>
-                        <th class="itemMessage-table-thead" colspan="8">变更任务</th>
-                    </tr>
-                    <tr>
-                        <th class="itemMessage-table-thead2" style="width: 12%">变更任务</th>
-                        <th class="itemMessage-table-thead2" style="width: 12%">备注</th>
-                        <th class="itemMessage-table-thead2" style="width: 8%">责任人</th>
-                        <th class="itemMessage-table-thead2" style="width: 10%">新计划时间</th>
-                        <th class="itemMessage-table-thead2" style="width: 10%">实际完成时间</th>
-                        <th class="itemMessage-table-thead2" style="width: 3%">状态</th>
-                        <th class="itemMessage-table-thead2" style="width: 3%">
-                            <input type="checkbox">
-                        </th>
-                        <th class="itemMessage-table-thead2" style="width: 3%">
-                            <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;">
-                        </th>
+                        <th class="itemMessage-table-thead" colspan="7">变更任务</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
+                        <td class="itemMessage-table-thead2" style="width: 27%">变更任务</td>
+                        <td class="itemMessage-table-thead2" style="width: 20%">责任人</td>
+                        <td class="itemMessage-table-thead2" style="width: 14%">新计划时间</td>
+                        <td class="itemMessage-table-thead2" style="width: 14%">实际完成时间</td>
+                        <td class="itemMessage-table-thead2" style="width: 14%">PM审批</td>
+                        <td class="itemMessage-table-thead2" style="width: 5%">状态</td>
+                        <td class="itemMessage-table-thead2" style="width: 5%">
+                            <img src="../img/add-icno.png" alt="" style="width: 20px;height: 20px;" class="addChangeRow">
+                        </td>
+                    </tr>
+                    <tr>
                         <td>
                             <input type="text">
                         </td>
                         <td>
-                            <input type="text">
+                            <select name="" id="">
+                                <option value="">请选择</option>
+                            </select>
                         </td>
-                        <td>Bing,Li</td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">通过</option>
+                                <option value="">不通过</option>
+                            </select>
+                        </td>
                         <td>
                             <div class="statues-choice"></div>
-                        </td>
-                        <td>
-                            <input type="checkbox">
                         </td>
                         <td>
                             <button style="border: none;background-color: #ffffff;cursor: pointer;">╳</button>
@@ -288,16 +300,20 @@
                             <input type="text">
                         </td>
                         <td>
-                            <input type="text">
+                            <select name="" id="">
+                                <option value="">请选择</option>
+                            </select>
                         </td>
-                        <td>Bing,Li</td>
                         <td><input type="text"></td>
                         <td><input type="text"></td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">通过</option>
+                                <option value="">不通过</option>
+                            </select>
+                        </td>
                         <td>
                             <div class="statues-choice"></div>
-                        </td>
-                        <td>
-                            <input type="checkbox">
                         </td>
                         <td>
                             <button style="border: none;background-color: #ffffff;cursor: pointer;">╳</button>
@@ -356,5 +372,7 @@
             </div>
         </div>
     </div>
+    <script src="../framework/jquery/dist/jquery.min.js"></script>
+    <script src="../js/form-change.js"></script>
 </body>
 </html>

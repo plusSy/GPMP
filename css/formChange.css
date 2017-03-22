@@ -6,7 +6,7 @@
 }
 .formChange table td{
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .basicInfo{
     border: 1px solid #9b9b9b;
@@ -164,7 +164,12 @@
 .itemMessage-table tr > td input[type='text'] {
     padding: 0 5px;
     height: 90%;
-    width: 100px;
+    width: 80%;
+}
+.itemMessage-table tr > td select{
+    padding: 0 5px;
+    height: 90%;
+    width: 80%;
 }
 .itemMessage-table-thead{
     padding-left: 10px;
