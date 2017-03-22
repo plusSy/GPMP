@@ -152,3 +152,7 @@
 .tableButton-cancel:hover{
     color: #ffffff;
 }
+.plangeToChange input{
+    width: 80%;
+    height: 90%;
+}

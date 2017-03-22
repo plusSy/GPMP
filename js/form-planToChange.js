@@ -3,8 +3,20 @@
  */
 $(function(){
     //添加模版
-    var newTr = "<tr><td><span></span></td> <td><span></span></td><td><span></span></td>"+
-        "<td><img src='../img/close-icno.png' class='removePlanWay' style='width: 20px;height: 20px;cursor: pointer;'></td></tr>";
+    var newTr = "<tr>"+
+        "<td>"+
+        "<input type='text'>"+
+        "</td>"+
+        "<td>"+
+        "<input type='text'>"+
+        "</td>"+
+        "<td>"+
+        "<input type='text'>"+
+        "</td>"+
+        "<td>"+
+        "<img src='../img/close-icno.png' class='removePlanWay'  style='width: 20px;height: 20px;cursor: pointer;'>"+
+        "</td>"+
+        "</tr>";
     $(".addPlanWay").on("click",function () {
         //获取tbody  img->td->tr->tbody
         var a = $(this).parent().parent().parent();
