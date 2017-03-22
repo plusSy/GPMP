@@ -7,58 +7,75 @@
 </head>
 <body>
     <div class="content-view">
-        <div class="view-from">
-            <div class="view-from-title">
-                <label>标题:</label>
-                <input type="text">
+
+       <div class="content-view-con">
+           <div class="content-view-title">
+               <div>
+                   基本信息
+               </div>
+           </div>
+           <div class="content-view-content">
+               <div class="view-from-title">
+                   <span class="view-from-tag">标题:</span>
+                   <input type="text">
+               </div>
+               <div class="view-from">
+                   <div class="view-from-item fl">
+                       <span class="view-from-tag">申请人:</span>
+                       <input type="text">
+                   </div>
+                   <div class="view-from-item fl">
+                       <span class="view-from-tag">申请时间:</span>
+                       <input type="text">
+                   </div>
+               </div>
+           </div>
+       </div>
+        <div class="content-view-con">
+            <div class="content-view-title">
+                <div>
+                    计划时间变更
+                </div>
             </div>
-        </div>
-        <div class="view-from">
-            <div class="view-from-item fl">
-                <label>申请人:</label>
-                <input type="text">
-            </div>
-            <div class="view-from-item fl">
-                <label class="app-time">申请时间:</label>
-                <input type="text">
-            </div>
-        </div>
-        <div class="view-from-title" style="margin-bottom: 15px;">
-            <label>任务名称:</label>
-            <input type="text">
-        </div>
-        <div class="view-from">
-            <div class="view-from-item fl">
-                <label>原计划时间:</label>
-                <input type="text">
-            </div>
-            <div class="view-from-item fl">
-                <label class="app-time">新计划时间:</label>
-                <input type="text">
-            </div>
-        </div>
-        <div class="view-from">
-            <div>
-                <label>变更原因:</label>
-                <select class="view-select">
-                    <option>客户原因</option>
-                </select>
-                <select class="view-select">
-                    <option>客户原因</option>
-                </select>
-            </div>
-        </div>
-        <div class="view-from" style="height: 95px;">
-            <div class="view-from-info">
-                <label>备注:</label>
-                <textarea>
-                </textarea>
-            </div>
-        </div>
-        <div class="view-from">
-            <div class="view-from-item">
-                <label style="line-height: 22px;">变更记录:</label>
-                <span style="color: #0560b4;border: none;cursor: pointer;" onclick="viewPlanTimeChange()">查看计划时间变更记录</span>
+            <div class="content-view-content">
+                <div class="view-from-title" style="margin-bottom: 15px;">
+                    <span class="view-from-tag">任务名称:</span>
+                    <input type="text">
+                </div>
+                <div class="view-from">
+                    <div class="view-from-item fl">
+                        <span class="view-from-tag">原计划时间:</span>
+                        <input type="text">
+                    </div>
+                    <div class="view-from-item fl">
+                        <span class="view-from-tag">新计划时间:</span>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="view-from">
+                    <div class="view-from-select">
+                        <span class="view-from-tag">变更原因:</span>
+                        <select class="view-select">
+                            <option>客户原因</option>
+                        </select>
+                        <select class="view-select">
+                            <option>客户原因</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="view-from" style="height: 95px;">
+                    <div class="view-from-info">
+                        <span class="view-from-tag">备注:</span>
+                        <textarea>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="view-from">
+                    <div class="view-from-item">
+                        <span style="line-height: 22px;" class="view-from-tag">变更记录:</span>
+                        <span style="color: #0560b4;border: none;cursor: pointer;" onclick="viewPlanTimeChange()">查看计划时间变更记录</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

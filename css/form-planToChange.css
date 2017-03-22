@@ -5,11 +5,33 @@
     padding: 20px 20px 0 20px;
     font-size: 14px;
 }
+.content-view-con{
+    width: 100%;
+    border: 1px solid #4e5465;
+    margin-bottom: 30px;
+}
+.content-view-title{
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    background-color: #0560B3;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    /*padding-left: 10px;*/
+}
+.content-view-title div{
+    width: 100%;
+    padding-left: 10px;
+}
+.content-view-content{
+    /*padding: 10px;*/
+}
 .content-view .view-from {
     width: 100%;
     height: 22px;
     line-height: 22px;
     margin-bottom: 20px;
+    padding-left: 10px;
 }
 .content-view .view-from .view-from-item {
     width: 50%;
@@ -20,9 +42,9 @@
     vertical-align: top;
     line-height: 30px;
 }
-.view-from-title label{
+.view-from-title .view-from-tag{
     display: inline-block;
-    width: 156px;
+    width: 100px;
     vertical-align: top;
     line-height: 30px;
 }
@@ -31,7 +53,7 @@
     width: 156px;
 }
 .view-from-item input{
-    width: 190px;
+    width: 66%;
     height: 24px;
     line-height: 30px;
     display: inline-block;
@@ -41,9 +63,10 @@
 }
 .view-from-title{
     width: 100%;
+    padding-left: 10px;
 }
 .view-from-title input{
-    width: 627px;
+    width: 663px;
     height: 24px;
     line-height: 30px;
     display: inline-block;
@@ -52,7 +75,7 @@
     padding-left: 10px;
 }
 .content-view .view-from .app-time {
-    margin-left: 9%;
+    /*margin-left: 9%;*/
 }
 .fl {
     float: left;
@@ -64,9 +87,13 @@
     margin-right: 60px;
     outline: none;
 }
+.view-from .view-from-info .view-from-tag {
+    width: 100px;
+    vertical-align: top;
+}
 .view-from .view-from-info textarea{
     height: 86px;
-    width: 78%;
+    width: 83%;
     resize: none;
     border-radius: 5px;
     border: 1px solid #c2c2c2;
@@ -155,4 +182,11 @@
 .plangeToChange input{
     width: 80%;
     height: 90%;
+}
+.view-from-tag{
+    width: 25%;
+    display: inline-block;
+}
+.view-from-select .view-from-tag{
+    width: 100px;
 }
