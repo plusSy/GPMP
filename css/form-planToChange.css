@@ -14,7 +14,7 @@
     width: 100%;
     line-height: 30px;
     height: 30px;
-    background-color: #0560B3;
+    background-color: #0560B4;
     color: #FFFFFF;
     margin-bottom: 10px;
     /*padding-left: 10px;*/
@@ -64,6 +64,7 @@
 .view-from-title{
     width: 100%;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 .view-from-title input{
     width: 663px;
@@ -182,6 +183,7 @@
 .plangeToChange input{
     width: 80%;
     height: 90%;
+    padding: 3px;
 }
 .view-from-tag{
     width: 25%;
