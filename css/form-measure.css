@@ -1,7 +1,9 @@
 .measure{
     width: 600px;
-    margin: 0 auto;
+    margin: 20px auto 0;
     font-size: 14px;
+    padding: 5px;
+    border:1px solid #2b2e37;
 }
 .measure-table{
     width: 100%;
@@ -63,4 +65,9 @@
 .measure-cancel{
     background-color: #FFFFFF;
     color: #0560B4;
+}
+.measure-title{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
 }

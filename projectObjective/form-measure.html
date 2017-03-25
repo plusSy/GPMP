@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="measure">
+        <div class="measure-title">措施界面：</div>
         <ul class="measure-table">
             <li class="measure-tr">
                <div class="measure-div">
@@ -106,7 +107,7 @@
                     <div class="measuru-flag"></div>
                     <div class="measuru-input">
                         <button class="measure-cancel" onclick="backOrClose()">取消</button>
-                        <button class="measure-save" onclick="backOrClose()">保存</button>
+                        <button class="measure-save" onclick="saveMessage()">保存</button>
                     </div>
                 </div>
             </li>
@@ -114,6 +115,10 @@
     </div>
     <script>
         function backOrClose() {
+            window.close();
+        }
+        function saveMessage(){
+            alert('保存成功！');
             window.close();
         }
     </script>
