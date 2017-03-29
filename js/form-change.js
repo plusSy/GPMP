@@ -6,7 +6,9 @@ $(function(){
     //添加模版
     var newTr = " <tr>"+
         "<td>"+
-        "<input type='text'>"+
+        "<select name='' id=''>"+
+        "<option value=''>请选择</option>"+
+        "</select>"+
         "</td>"+
         "<td>"+
         "<select>"+
@@ -35,6 +37,28 @@ $(function(){
         a.append(newTr);
     });
     $(".romveChange tbody ").delegate('button', 'click', function() {
+        //获取当前要删除的行 tr
+        var delTr = $(this).parent().parent();
+        delTr.remove();
+    });
+
+    var newPartsTr = " <tr class='basicInfo-tableSecond-tr'>"+
+        "<td class='basicInfo-tableSecond-td'>"+
+        "<select >"+
+        "<option>请选择</option>"+
+        "</select>"+
+        "</td>"+
+        "<td class='basicInfo-tableSecond-td'>3416780</td>"+
+        "<td class='basicInfo-tableSecond-td'>"+
+        "<img src='../img/close-icno.png' alt='' class='removeParts' style='width: 20px;height: 20px;'>"+
+        "</td>"+
+        "</tr>";
+
+    $(".addParts").on("click",function(){
+        var a = $(this).parent().parent().parent();
+        a.append(newPartsTr);
+    });
+    $(".partsTable tbody").delegate('img[class="removeParts"]', 'click', function() {
         //获取当前要删除的行 tr
         var delTr = $(this).parent().parent();
         delTr.remove();

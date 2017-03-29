@@ -1,0 +1,17 @@
+VPN:
+登录账号：test05
+登录密码:minth.123
+
+客户服务器：
+IP地址：gdc1sp16t01
+用户：minth-global\test05 
+密码：minth.123
+
+
+
+NKGG6-WBPCC-HXWMY-6DQGJ-CPQVG
+
+
+
+minth-global\admsp
+minth@sp123

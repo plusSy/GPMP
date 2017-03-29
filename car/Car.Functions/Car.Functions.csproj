@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DFE7DD3-C15B-440E-B176-A6CCFDDB2BDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Car.Functions</RootNamespace>
+    <AssemblyName>Car.Functions</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.2\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Qiumc.LogHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Qiumc.LogHelper.1.0.0.0\lib\net40\Qiumc.LogHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlTemplates\Functions\CustomNavBarControl.ascx.cs">
+      <DependentUpon>CustomNavBarControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Functions\CustomNavBarControl.ascx.designer.cs">
+      <DependentUpon>CustomNavBarControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Functions\CustomSuiteBarControl.ascx.cs">
+      <DependentUpon>CustomSuiteBarControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Functions\CustomSuiteBarControl.ascx.designer.cs">
+      <DependentUpon>CustomSuiteBarControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadTemplate\DownloadTemplate.cs" />
+    <Compile Include="DownloadTemplate\DownloadTemplateUserControl.ascx.cs">
+      <DependentUpon>DownloadTemplateUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadTemplate\DownloadTemplateUserControl.ascx.designer.cs">
+      <DependentUpon>DownloadTemplateUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\ProjectEdit.aspx.cs">
+      <DependentUpon>ProjectEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\ProjectEdit.aspx.designer.cs">
+      <DependentUpon>ProjectEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\AlreadyCompleted.aspx.cs">
+      <DependentUpon>AlreadyCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\AlreadyCompleted.aspx.designer.cs">
+      <DependentUpon>AlreadyCompleted.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ChangeAdd.aspx.cs">
+      <DependentUpon>ChangeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ChangeAdd.aspx.designer.cs">
+      <DependentUpon>ChangeAdd.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ChangeManage.aspx.cs">
+      <DependentUpon>ChangeManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ChangeManage.aspx.designer.cs">
+      <DependentUpon>ChangeManage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\NodeManagement.aspx.cs">
+      <DependentUpon>NodeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\NodeManagement.aspx.designer.cs">
+      <DependentUpon>NodeManagement.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\NodeReview.aspx.cs">
+      <DependentUpon>NodeReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\NodeReview.aspx.designer.cs">
+      <DependentUpon>NodeReview.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\PlanDateTimeChange.aspx.cs">
+      <DependentUpon>PlanDateTimeChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\PlanDateTimeChange.aspx.designer.cs">
+      <DependentUpon>PlanDateTimeChange.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\PlanDateTimeChangeRecord.aspx.cs">
+      <DependentUpon>PlanDateTimeChangeRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\PlanDateTimeChangeRecord.aspx.designer.cs">
+      <DependentUpon>PlanDateTimeChangeRecord.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectInfo.aspx.cs">
+      <DependentUpon>ProjectInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectInfo.aspx.designer.cs">
+      <DependentUpon>ProjectInfo.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectMembers.aspx.cs">
+      <DependentUpon>ProjectMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectMembers.aspx.designer.cs">
+      <DependentUpon>ProjectMembers.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectObjective.aspx.cs">
+      <DependentUpon>ProjectObjective.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\ProjectObjective.aspx.designer.cs">
+      <DependentUpon>ProjectObjective.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\RiskAdd.aspx.cs">
+      <DependentUpon>RiskAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\RiskAdd.aspx.designer.cs">
+      <DependentUpon>RiskAdd.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\RiskManage.aspx.cs">
+      <DependentUpon>RiskManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\Detail\RiskManage.aspx.designer.cs">
+      <DependentUpon>RiskManage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\InDevelopment.aspx.cs">
+      <DependentUpon>InDevelopment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\InDevelopment.aspx.designer.cs">
+      <DependentUpon>InDevelopment.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\ToBeMaintained.aspx.cs">
+      <DependentUpon>ToBeMaintained.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Project\ToBeMaintained.aspx.designer.cs">
+      <DependentUpon>ToBeMaintained.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\LanguageEdit.aspx.cs">
+      <DependentUpon>LanguageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\LanguageEdit.aspx.designer.cs">
+      <DependentUpon>LanguageEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\ListLanguageEdit.aspx.cs">
+      <DependentUpon>ListLanguageEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\ListLanguageEdit.aspx.designer.cs">
+      <DependentUpon>ListLanguageEdit.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\PageUrlSet.aspx.cs">
+      <DependentUpon>PageUrlSet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Sys\PageUrlSet.aspx.designer.cs">
+      <DependentUpon>PageUrlSet.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\AlreadyCompleted.aspx.cs">
+      <DependentUpon>AlreadyCompleted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\AlreadyCompleted.aspx.designer.cs">
+      <DependentUpon>AlreadyCompleted.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\NotStarted.aspx.cs">
+      <DependentUpon>NotStarted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\NotStarted.aspx.designer.cs">
+      <DependentUpon>NotStarted.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\OnGoing.aspx.cs">
+      <DependentUpon>OnGoing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Functions\Task\OnGoing.aspx.designer.cs">
+      <DependentUpon>OnGoing.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectStep\ProjectStep.cs" />
+    <Compile Include="ProjectStep\ProjectStepUserControl.ascx.cs">
+      <DependentUpon>ProjectStepUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectStep\ProjectStepUserControl.ascx.designer.cs">
+      <DependentUpon>ProjectStepUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectTabs\ProjectTabs.cs" />
+    <Compile Include="ProjectTabs\ProjectTabsUserControl.ascx.cs">
+      <DependentUpon>ProjectTabsUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectTabs\ProjectTabsUserControl.ascx.designer.cs">
+      <DependentUpon>ProjectTabsUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryList\QueryList.cs" />
+    <Compile Include="QueryList\QueryListUserControl.ascx.cs">
+      <DependentUpon>QueryListUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryList\QueryListUserControl.ascx.designer.cs">
+      <DependentUpon>QueryListUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reviewSetDefaulID\reviewSetDefaulID.cs" />
+    <Compile Include="reviewSetDefaulID\reviewSetDefaulIDUserControl.ascx.cs">
+      <DependentUpon>reviewSetDefaulIDUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reviewSetDefaulID\reviewSetDefaulIDUserControl.ascx.designer.cs">
+      <DependentUpon>reviewSetDefaulIDUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FlowService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TestService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ControlTemplates\Functions\CustomNavBarControl.ascx" />
+    <Content Include="ControlTemplates\Functions\CustomSuiteBarControl.ascx" />
+    <Content Include="DelegateCustomNavBar\Elements.xml" />
+    <Content Include="DelegateSuiteBarReplace\Elements.xml" />
+    <Content Include="DownloadTemplate\DownloadTemplateUserControl.ascx" />
+    <Content Include="DownloadTemplate\Elements.xml" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\dist\bootstrap3-editable\css\bootstrap-editable.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\dist\bootstrap3-editable\img\clear.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\dist\bootstrap3-editable\img\loading.gif" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\dist\bootstrap3-editable\js\bootstrap-editable.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\dist\bootstrap3-editable\js\bootstrap-editable.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-container.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-container.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-inline.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-popover.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-popover3.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-poshytip.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\containers\editable-tooltip.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form-bootstrap.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form-bootstrap3.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form-jqueryui.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form-utils.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\editable-form\editable-form.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\element\editable-element.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\element\editable-element.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\img\clear.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\img\loading.gif" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\address\address.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\address\address.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\typeaheadjs\lib\typeahead.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\typeaheadjs\lib\typeahead.js-bootstrap.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\typeaheadjs\typeaheadjs.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\bootstrap-wysihtml5-0.0.2.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\bootstrap-wysihtml5-0.0.2.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\bootstrap-wysihtml5-0.0.2.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\wysihtml5-0.3.0.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\wysihtml5-0.3.0.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\bootstrap-wysihtml5-0.0.2\wysiwyg-color.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs-ext\wysihtml5\wysihtml5.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\abstract.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\checklist.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\combodate\combodate.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\combodate\lib\combodate.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\combodate\lib\moment.min.1.7.2.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\combodate\lib\moment.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\datetime\bootstrap-datetimepicker\css\datetimepicker.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\datetime\bootstrap-datetimepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\datetime\datetime.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\datetime\datetimefield.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\dateui.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\dateuifield.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\animated-overlay.gif" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.1.custom.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.1.custom.min.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.2.custom.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.2.custom.min.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.9.1.custom.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\css\redmond\jquery-ui-1.9.1.custom.min.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.1.custom.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.2.custom.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.9.1.custom.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\dateui\jquery-ui-datepicker\js\jquery-ui-1.9.1.custom.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\date\bootstrap-datepicker\css\datepicker.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\date\bootstrap-datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\date\date.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\date\datefield.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\html5types.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\list.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2-bootstrap.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2-spinner.gif" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2.css" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\lib\select2x2.png" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\select2\select2.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\text.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\textarea.js" />
+    <Content Include="Layouts\Functions\bootstrap-tabl-editable\src\inputs\typeahead.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table-locale-all.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table-locale-all.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table.min.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\bootstrap-table.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\angular\bootstrap-table-angular.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\angular\bootstrap-table-angular.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\cookie\bootstrap-table-cookie.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\cookie\bootstrap-table-cookie.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\copy-rows\bootstrap-table-copy-rows.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\copy-rows\bootstrap-table-copy-rows.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\editable\bootstrap-table-editable.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\editable\bootstrap-table-editable.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\editable\mindmup-editabletable.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\export\bootstrap-table-export.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\export\bootstrap-table-export.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\filter\bootstrap-table-filter.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\filter\bootstrap-table-filter.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by\bootstrap-table-group-by.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by\bootstrap-table-group-by.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\group-by\bootstrap-table-group-by.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\i18n-enhance\bootstrap-table-i18n-enhance.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\i18n-enhance\bootstrap-table-i18n-enhance.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\key-events\bootstrap-table-key-events.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\key-events\bootstrap-table-key-events.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\mobile\bootstrap-table-mobile.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\mobile\bootstrap-table-mobile.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multi-column-toggle\bootstrap-table-multi-toggle.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multi-column-toggle\bootstrap-table-multi-toggle.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\resizable\bootstrap-table-resizable.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\resizable\bootstrap-table-resizable.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\select2-filter\bootstrap-table-select2-filter.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\select2-filter\bootstrap-table-select2-filter.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.css" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.min.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\locale\bootstrap-table-zh-CN.js" />
+    <Content Include="Layouts\Functions\bootstrap-table\locale\bootstrap-table-zh-CN.min.js" />
+    <Content Include="Layouts\Functions\CoreScript.js" />
+    <Content Include="Layouts\Functions\Css\ace-rtl.min.css" />
+    <Content Include="Layouts\Functions\Css\ace-skins.min.css" />
+    <Content Include="Layouts\Functions\Css\ace.min.css" />
+    <Content Include="Layouts\Functions\Css\font-awesome.min.css" />
+    <Content Include="Layouts\Functions\Css\gpmp.css" />
+    <Content Include="Layouts\Functions\Css\nodeReview.css" />
+    <Content Include="Layouts\Functions\Css\nodeManagement.css" />
+    <Content Include="Layouts\Functions\Default.aspx" />
+    <Content Include="Layouts\Functions\ExtendService.asmx" />
+    <Content Include="Layouts\Functions\images\add-icno.png" />
+    <Content Include="Layouts\Functions\images\captchaCode.jpg" />
+    <Content Include="Layouts\Functions\images\circle.png" />
+    <Content Include="Layouts\Functions\images\close-icno.png" />
+    <Content Include="Layouts\Functions\images\G.png" />
+    <Content Include="Layouts\Functions\images\gantan-icno.png" />
+    <Content Include="Layouts\Functions\images\icon_card.png" />
+    <Content Include="Layouts\Functions\images\icon_card_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_change.png" />
+    <Content Include="Layouts\Functions\images\icon_change_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_char.png" />
+    <Content Include="Layouts\Functions\images\icon_chara.png" />
+    <Content Include="Layouts\Functions\images\icon_chara_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_char_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_house.png" />
+    <Content Include="Layouts\Functions\images\icon_house_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_rule.png" />
+    <Content Include="Layouts\Functions\images\icon_rule_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_source.png" />
+    <Content Include="Layouts\Functions\images\icon_source_grey.png" />
+    <Content Include="Layouts\Functions\images\icon_user.png" />
+    <Content Include="Layouts\Functions\images\icon_user_grey.png" />
+    <Content Include="Layouts\Functions\images\index\1.png" />
+    <Content Include="Layouts\Functions\images\index\2.png" />
+    <Content Include="Layouts\Functions\images\logo.png" />
+    <Content Include="Layouts\Functions\images\pine.png" />
+    <Content Include="Layouts\Functions\images\progress02.png" />
+    <Content Include="Layouts\Functions\images\R.png" />
+    <Content Include="Layouts\Functions\images\save-icno.png" />
+    <Content Include="Layouts\Functions\images\Y.png" />
+    <Content Include="Layouts\Functions\Project\Detail\NodeManagement.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\NodeReview.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\PlanDateTimeChange.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\PlanDateTimeChangeRecord.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\ProjectObjective.aspx" />
+    <Content Include="Layouts\Functions\Script\date\css\bootstrap-datetimepicker.css" />
+    <Content Include="Layouts\Functions\Script\date\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Layouts\Functions\Script\date\js\bootstrap-datetimepicker.js" />
+    <Content Include="Layouts\Functions\Script\date\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Layouts\Functions\Script\date\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="Layouts\Functions\Script\date\js\locales\bootstrap-datetimepicker.zh-TW.js" />
+    <Content Include="Layouts\Functions\Script\pym.v1.js" />
+    <Content Include="Layouts\Functions\Script\knockout-3.4.1.js" />
+    <Content Include="Layouts\Functions\ProjectEdit.aspx" />
+    <Content Include="Layouts\Functions\Project\AlreadyCompleted.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\ChangeAdd.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\ChangeManage.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\ProjectInfo.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\ProjectMembers.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\RiskAdd.aspx" />
+    <Content Include="Layouts\Functions\Project\Detail\RiskManage.aspx" />
+    <Content Include="Layouts\Functions\Project\InDevelopment.aspx" />
+    <Content Include="Layouts\Functions\Project\ToBeMaintained.aspx" />
+    <Content Include="Layouts\Functions\Script\knockout.mapping.js" />
+    <Content Include="Layouts\Functions\Script\moment\moment-with-locales.min.js" />
+    <Content Include="Layouts\Functions\Script\moment\moment.min.js" />
+    <Content Include="Layouts\Functions\Sys\LanguageEdit.aspx" />
+    <Content Include="Layouts\Functions\Sys\ListLanguageEdit.aspx" />
+    <Content Include="Layouts\Functions\Sys\PageUrlSet.aspx" />
+    <Content Include="Layouts\Functions\Task\AlreadyCompleted.aspx" />
+    <Content Include="Layouts\Functions\Task\NotStarted.aspx" />
+    <Content Include="Layouts\Functions\Task\OnGoing.aspx" />
+    <Content Include="Layouts\Functions\WCFCallMethod.js" />
+    <Content Include="ListEditPageSet\Elements.xml" />
+    <Content Include="ProjectStep\Elements.xml" />
+    <Content Include="ProjectStep\ProjectStepUserControl.ascx" />
+    <Content Include="ProjectTabs\Elements.xml" />
+    <Content Include="ProjectTabs\ProjectTabsUserControl.ascx" />
+    <Content Include="QueryList\Elements.xml" />
+    <Content Include="QueryList\QueryListUserControl.ascx" />
+    <Content Include="reviewSetDefaulID\Elements.xml" />
+    <Content Include="reviewSetDefaulID\reviewSetDefaulIDUserControl.ascx" />
+    <None Include="Web References\FlowService\Flow.disco" />
+    <None Include="Web References\FlowService\Flow.wsdl" />
+    <None Include="Web References\FlowService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TestService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TestService\WebService1.disco" />
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fe39822-1b8f-4d77-9af2-68cec7e84286}</SharePointProjectItemId>
+    </None>
+    <None Include="DelegateCustomNavBar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{18a44aa4-9879-4461-9493-26828952b86a}</SharePointProjectItemId>
+    </None>
+    <None Include="DelegateSuiteBarReplace\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01dfcc7b-be8d-4c08-b71d-5f50285a2b45}</SharePointProjectItemId>
+    </None>
+    <None Include="DownloadTemplate\DownloadTemplate.webpart" />
+    <None Include="DownloadTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c4eadcd-52e2-404f-ad02-3706168b5427}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{fef3c41e-b5c4-41a8-a424-29dec8ecf7cd}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\Functions\images\Thumbs.db" />
+    <None Include="Layouts\Functions\template\meeting.xls" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{44b4de46-0665-4d2e-9bd5-8a295aa493f5}</SharePointProjectItemId>
+    </None>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="ListEditPageSet\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dbf54327-3eb6-43dd-b34c-a90c15267734}</SharePointProjectItemId>
+    </None>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{4c23f4d2-1c25-41c4-981f-ff247d47e733}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProjectStep\ProjectStep.webpart" />
+    <None Include="ProjectStep\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c7870cb8-72e3-4a7c-8994-0db48d45f81a}</SharePointProjectItemId>
+    </None>
+    <None Include="ProjectTabs\ProjectTabs.webpart" />
+    <None Include="ProjectTabs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4532281-b4ab-4b5c-be23-c42ca0d4acb8}</SharePointProjectItemId>
+    </None>
+    <None Include="QueryList\QueryList.webpart" />
+    <None Include="QueryList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ada44419-53df-42b3-bee9-8f0eef5428fe}</SharePointProjectItemId>
+    </None>
+    <None Include="reviewSetDefaulID\reviewSetDefaulID.webpart" />
+    <None Include="reviewSetDefaulID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34571613-1756-4480-90c4-a6626c31e1ec}</SharePointProjectItemId>
+    </None>
+    <None Include="Web References\TestService\WebService1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Car.Common\Car.Common.csproj">
+      <Project>{c11ce966-b11a-4761-bfcc-75d51c910acb}</Project>
+      <Name>Car.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Car.Models\Car.Models.csproj">
+      <Project>{AC311FB8-4FCF-4390-8C26-2445DD418EA6}</Project>
+      <Name>Car.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Car.WebService.CodeLogic\Car.WebService.CodeLogic.csproj">
+      <Project>{837c1430-ab4e-40b8-a99d-2d8f864b3df9}</Project>
+      <Name>Car.WebService.CodeLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Functions\TreeView\bootstrap-treeview.min.css" />
+    <Content Include="Layouts\Functions\TreeView\bootstrap-treeview.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://gdc1sp16t01/_vti_bin/Car/Flow.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FlowService\</RelPath>
+      <UpdateFromURL>http://gdc1sp16t01/_vti_bin/Car/Flow.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://moss:8099/WebService1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TestService\</RelPath>
+      <UpdateFromURL>http://moss:8099/WebService1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

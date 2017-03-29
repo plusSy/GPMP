@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3355aa7f-6d03-4a5d-88c4-1930f13ad9f6" solutionId="3355aa7f-6d03-4a5d-88c4-1930f13ad9f6" resetWebServer="false" sharePointProductVersion="16.0" name="Car.UI" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e0a82847-d721-4a17-974f-382b842dc83a" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c2cfa511-37df-41c9-bf57-809560f66b05" />
+  </projectItems>
+</package>

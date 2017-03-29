@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4c23f4d2-1c25-41c4-981f-ff247d47e733" solutionId="4c23f4d2-1c25-41c4-981f-ff247d47e733" resetWebServer="false" sharePointProductVersion="16.0" name="Car.Functions" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Car.Models.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Car.Models\Car.Models.csproj" />
+    <projectOutputAssembly location="Car.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Car.Common\Car.Common.csproj" />
+    <projectOutputAssembly location="Car.WebService.CodeLogic.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Car.WebService.CodeLogic\Car.WebService.CodeLogic.csproj" />
+    <customAssembly location="Newtonsoft.Json.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\Newtonsoft.Json.10.0.1\lib\net40\Newtonsoft.Json.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="fef3c41e-b5c4-41a8-a424-29dec8ecf7cd" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="44b4de46-0665-4d2e-9bd5-8a295aa493f5" />
+    <projectItemReference itemId="4fe39822-1b8f-4d77-9af2-68cec7e84286" />
+  </projectItems>
+</package>

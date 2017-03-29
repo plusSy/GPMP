@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+ 
+  <CustomAction
+Id="ItemPermissionSet"
+GroupId="Permissions"
+Location="Microsoft.SharePoint.ListEdit"
+Rights="ManageWeb"
+Sequence="2000"
+Title="列表多语言"
+Description="">
+    <UrlAction Url="{SiteUrl}/_layouts/15/Functions/sys/ListLanguageEdit.aspx?List={ListId}"  />
+  </CustomAction>
+
+
+  <CustomActionGroup
+        Id="GPMPSetting"
+        Title="GPMP Setting"
+        Description = "GPMP的一些设置"
+        Location = "Microsoft.SharePoint.SiteSettings"
+        Sequence = "1999"
+  >
+  </CustomActionGroup>
+  <CustomAction
+    Id="EditLanguagePage"
+    GroupId="GPMPSetting"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Rights="ManageWeb"
+    Sequence="2000"
+    Title="多语言编辑"
+    Description="多语言编辑">
+    <UrlAction Url="{SiteUrl}/_layouts/15/Functions/sys/LanguageEdit.aspx"  />
+  </CustomAction>
+
+
+</Elements>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Control Id="CustomNavBar" Sequence="90" ControlSrc="~/_CONTROLTEMPLATES/15/Functions/CustomNavBarControl.ascx"></Control>
+</Elements>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e4528625-ae51-4081-8a57-b77272c049bb" Scope="Site" Title="Car.Functions Feature1">
+  <ElementManifests>
+    <ElementManifest Location="DownloadTemplate\Elements.xml" />
+    <ElementFile Location="DownloadTemplate\DownloadTemplate.webpart" />
+    <ElementManifest Location="ListEditPageSet\Elements.xml" />
+    <ElementManifest Location="QueryList\Elements.xml" />
+    <ElementFile Location="QueryList\QueryList.webpart" />
+    <ElementManifest Location="DelegateCustomNavBar\Elements.xml" />
+    <ElementManifest Location="DelegateSuiteBarReplace\Elements.xml" />
+    <ElementManifest Location="ProjectStep\Elements.xml" />
+    <ElementFile Location="ProjectStep\ProjectStep.webpart" />
+    <ElementManifest Location="ProjectTabs\Elements.xml" />
+    <ElementFile Location="ProjectTabs\ProjectTabs.webpart" />
+    <ElementManifest Location="reviewSetDefaulID\Elements.xml" />
+    <ElementFile Location="reviewSetDefaulID\reviewSetDefaulID.webpart" />
+  </ElementManifests>
+</Feature>

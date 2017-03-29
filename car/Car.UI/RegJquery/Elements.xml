@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Location="ScriptLink"  
+                ScriptSrc="/_Layouts/15/UI/Jquery/jquery-1.12.4.min.js"
+                Sequence="10000"></CustomAction>
+  <CustomAction Location="ScriptLink"
+              ScriptSrc="/_Layouts/15/UI/Jquery/jquery.extend.resize.js"
+              Sequence="10001"></CustomAction>
+  
+    <CustomAction Location="ScriptLink"
+              ScriptSrc="/_Layouts/15/UI/sphelper.js"
+              Sequence="99"></CustomAction>
+  
+  <CustomAction Location="ScriptLink"
+              ScriptSrc="/_Layouts/15/UI/pym.v1.js"
+              Sequence="10000"></CustomAction>
+</Elements>

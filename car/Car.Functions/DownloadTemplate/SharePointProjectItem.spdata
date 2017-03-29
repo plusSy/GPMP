@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="DownloadTemplateUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="DownloadTemplate\" Type="ElementManifest" />
+    <ProjectItemFile Source="DownloadTemplate.webpart" Target="DownloadTemplate\" Type="ElementFile" />
+    <ProjectItemFile Source="DownloadTemplateUserControl.ascx" Target="CONTROLTEMPLATES\Car.Functions\DownloadTemplate\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Car.Functions.DownloadTemplate" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

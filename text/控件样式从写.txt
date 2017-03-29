@@ -1,0 +1,107 @@
+1、选人控件
+代码：
+<td class='candidate-Control'>
+    <SharePoint:PeopleEditor ID="peUser" runat="server" MultiSelect="true"></SharePoint:PeopleEditor>
+</td>
+
+界面审查元素后的布局：
+    td.candidate-Control
+        span dir='none'
+            input
+            span
+                input
+                input
+                input
+                input
+                table
+                    tbody
+                    tr
+                        td
+                            table
+                                tbody
+                                tr
+                                    td
+                                        div
+
+
+样式重写：
+    .candidate-Control span table{
+        width: 100% !important;
+    }
+    .candidate-Control span table table{
+        width: 100% !important;
+    }
+    .candidate-Control span table table div{
+        width: 100%;
+        border: none;
+    }
+
+2、元数据控件
+代码：
+<td class='metadata'>
+    <SharePoint:PeopleEditor ID="peUser" runat="server" MultiSelect="true"></SharePoint:PeopleEditor>
+</td>
+
+界面审查元素后的布局：
+    td.metadata
+        span dir='none'
+            span
+                input
+                div
+                    div
+                        img
+                        div
+
+
+样式重写：
+    .metadata{
+        width: 30%;
+        padding-left: 10px;
+        border: 1px solid gray;
+    }
+    .metadata span input{
+        width: 100%;
+        border: none;
+    }
+    .metadata span span div{
+        width: 100%;
+        border: none;
+    }
+    .metadata span span div div{
+        width: 100%;
+        border: none;
+    }
+    .metadata span span div div div{
+        width: 90% !important;
+        border-color: #ffffff;
+    }
+3、日期控件
+代码：
+<td class='metadata'>
+   <SharePoint:DateTimeControl  ID="planCloseDate" runat="server" DateOnly="true" />
+</td>
+界面审查元素后的布局：
+    td.data-Control
+        table
+            tbody
+            tr
+                td
+
+
+样式重写：
+    .data-Control{
+        width: 30%;
+        padding-left: 10px;
+        border: 1px solid gray;
+    }
+    .data-Control table{
+        width: 100%;
+    }
+   .data-Control table tr td input{
+       padding: 0 5px;
+       height: 90%;
+       width: 80%;
+       border: 1px solid #cccccc;
+       border-radius: 5px;
+   }
+
